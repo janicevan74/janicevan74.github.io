@@ -4,6 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="canonical" href="https://miniatureneststudio.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://miniatureneststudio.com/">
+<meta property="og:site_name" content="MiniatureNestStudio">
+<meta property="og:title" content="MiniatureNestStudio · Dollhouse miniature tips &amp; guides">
+<meta property="og:description" content="Free bilingual tips and tools for 1:6, 1:12 and 1:24 dollhouse rooms: a scale converter, a wallpaper planner, printables how-to and a Puerto Rican house guide.">
+<meta property="og:image" content="https://miniatureneststudio.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="description" content="Bilingual (English/Spanish) tips for 1:12 and 1:24 dollhouse miniatures: scale converter, printables how-to, room box building, a wallpaper planner and a Puerto Rican house guide, from MiniatureNestStudio.">
 <style>
 :root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -433,6 +444,12 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 .about-card { background: var(--tint); border-radius: 14px; padding: 1.4rem; display: grid; gap: .9rem; justify-items: start; }
 .about-card h3 { font-family: var(--f-display); font-weight: 400; font-size: 1.5rem; }
 .about-card .ticks { margin: 0; }
+
+.shop-row { margin-top: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; padding: 1rem 1.2rem; border: 1px dashed var(--mark); border-radius: 12px; background: var(--surface); }
+.shop-lab { font: 500 var(--s-xs) var(--f-mono); text-transform: uppercase; letter-spacing: .1em; color: var(--mark); }
+.shop-chips { display: flex; flex-wrap: wrap; gap: .5rem; min-width: 0; }
+.shop-chip { text-decoration: none; font-weight: 600; font-size: var(--s-sm); padding: .45rem .85rem; border-radius: 999px; background: var(--tint); color: var(--fg); border: 1px solid var(--line); }
+.shop-chip:hover { border-color: var(--mark); color: var(--mark); }
 </style>
 
 </head>
@@ -467,8 +484,8 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
         <span data-l="es">Cuartos grandes, <em>una pulgada</em> por pie.</span>
       </h1>
       <p class="lede">
-        <span data-l="en">Plain-language help for building 1:12 and 1:24 rooms: getting the scale right, printing and assembling paper pieces, and putting a room box together in the right order.</span>
-        <span data-l="es">Ayuda sencilla para construir cuartos en escala 1:12 y 1:24: cómo acertar con la escala, imprimir y armar piezas de papel, y montar un roombox en el orden correcto.</span>
+        <span data-l="en">Plain-language help for building 1:6, 1:12 and 1:24 rooms: getting the scale right, printing and assembling paper pieces, and putting a room box together in the right order.</span>
+        <span data-l="es">Ayuda sencilla para construir cuartos en escala 1:6, 1:12 y 1:24: cómo acertar con la escala, imprimir y armar piezas de papel, y montar un roombox en el orden correcto.</span>
       </p>
       <div class="jump">
         <a class="btn solid" href="#start" data-go="start"><span data-l="en">Start here</span><span data-l="es">Empieza aquí</span></a>
@@ -602,6 +619,8 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
         </table>
       </div>
     </div>
+    <div class="shop-row"><span class="shop-lab"><span data-l="en">From the shop</span><span data-l="es">En la tienda</span></span><div class="shop-chips"><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=beginner" target="_blank" rel="noopener"><span data-l="en">Beginner's Guide to Miniature Building</span><span data-l="es">Guía para principiantes</span> →</a><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=bundle" target="_blank" rel="noopener"><span data-l="en">Planner Bundle</span><span data-l="es">Paquete de planificadores</span> →</a></div></div>
+
   </div>
 </section>
 
@@ -687,6 +706,7 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
           </label>
           <div class="f full"><span><span data-l="en">Scale</span><span data-l="es">Escala</span></span>
             <div class="scales" role="group" aria-label="Scale">
+              <button type="button" data-scale="6" aria-pressed="false">1:6</button>
               <button type="button" data-scale="12" aria-pressed="true">1:12</button>
               <button type="button" data-scale="24" aria-pressed="false">1:24</button>
               <button type="button" data-scale="48" aria-pressed="false">1:48</button>
@@ -708,11 +728,19 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
         <div class="scales-grid">
           <div class="sc">
             <div>
+              <div class="ratio">1:6</div>
+              <div class="alias"><span data-l="en">Playscale · 2 in = 1 ft</span><span data-l="es">Escala de muñecas · 2 pulg = 1 pie</span></div>
+              <p class="d"><span data-l="en">Twice the size of 1:12. The scale of fashion dolls and doll dioramas.</span><span data-l="es">El doble de 1:12. La escala de las muñecas de moda y sus dioramas.</span></p>
+            </div>
+            <div class="bar"><span><span data-l="en">16 in</span><span data-l="es">16 pulg</span></span><i style="height:128px"></i></div>
+          </div>
+          <div class="sc">
+            <div>
               <div class="ratio">1:12</div>
               <div class="alias"><span data-l="en">One-inch scale · 1 in = 1 ft</span><span data-l="es">Escala de una pulgada · 1 pulg = 1 pie</span></div>
               <p class="d"><span data-l="en">The standard dollhouse scale. The most furniture, kits and printables are made for it.</span><span data-l="es">La escala estándar de casas de muñecas. Es la que tiene más muebles, kits e imprimibles.</span></p>
             </div>
-            <div class="bar"><span><span data-l="en">8 in</span><span data-l="es">8 pulg</span></span><i style="height:96px"></i></div>
+            <div class="bar"><span><span data-l="en">8 in</span><span data-l="es">8 pulg</span></span><i style="height:64px"></i></div>
           </div>
           <div class="sc">
             <div>
@@ -720,7 +748,7 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
               <div class="alias"><span data-l="en">Half scale · ½ in = 1 ft</span><span data-l="es">Media escala · ½ pulg = 1 pie</span></div>
               <p class="d"><span data-l="en">Half the size of 1:12. Good for book nooks, small kit houses and tight shelves.</span><span data-l="es">La mitad de 1:12. Ideal para book nooks, casitas en kit y repisas pequeñas.</span></p>
             </div>
-            <div class="bar"><span><span data-l="en">4 in</span><span data-l="es">4 pulg</span></span><i style="height:48px"></i></div>
+            <div class="bar"><span><span data-l="en">4 in</span><span data-l="es">4 pulg</span></span><i style="height:32px"></i></div>
           </div>
           <div class="sc">
             <div>
@@ -728,7 +756,7 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
               <div class="alias"><span data-l="en">Quarter scale · ¼ in = 1 ft</span><span data-l="es">Escala de un cuarto · ¼ pulg = 1 pie</span></div>
               <p class="d"><span data-l="en">Tiny. Often used for a dollhouse inside a dollhouse.</span><span data-l="es">Diminuta. Se usa a menudo para una casita dentro de otra casa de muñecas.</span></p>
             </div>
-            <div class="bar"><span><span data-l="en">2 in</span><span data-l="es">2 pulg</span></span><i style="height:24px"></i></div>
+            <div class="bar"><span><span data-l="en">2 in</span><span data-l="es">2 pulg</span></span><i style="height:16px"></i></div>
           </div>
         </div>
         <p class="bar-note"><span data-l="en">Bars show an 8 ft ceiling at each scale, drawn to the same proportion.</span><span data-l="es">Las barras muestran un techo de 8 pies en cada escala, dibujadas en la misma proporción.</span></p>
@@ -740,30 +768,32 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
         <table>
           <caption><span data-l="en">Everyday sizes in miniature</span><span data-l="es">Medidas comunes en miniatura</span></caption>
           <thead>
-            <tr><th><span data-l="en">Real item</span><span data-l="es">Objeto real</span></th><th>1:12</th><th>1:24</th></tr>
+            <tr><th><span data-l="en">Real item</span><span data-l="es">Objeto real</span></th><th>1:6</th><th>1:12</th><th>1:24</th></tr>
           </thead>
           <tbody>
-            <tr><td><span data-l="en">Ceiling height, 8 ft</span><span data-l="es">Altura del techo, 8 pies</span></td><td class="n"><span data-l="en">8 in</span><span data-l="es">8 pulg</span></td><td class="n"><span data-l="en">4 in</span><span data-l="es">4 pulg</span></td></tr>
-            <tr><td><span data-l="en">Interior door, 80 × 32 in</span><span data-l="es">Puerta interior, 80 × 32 pulg</span></td><td class="n"><span data-l="en">6⅔ × 2⅔ in</span><span data-l="es">6⅔ × 2⅔ pulg</span></td><td class="n"><span data-l="en">3⅓ × 1⅓ in</span><span data-l="es">3⅓ × 1⅓ pulg</span></td></tr>
-            <tr><td><span data-l="en">Kitchen counter, 36 in high</span><span data-l="es">Tope de cocina, 36 pulg de alto</span></td><td class="n"><span data-l="en">3 in</span><span data-l="es">3 pulg</span></td><td class="n"><span data-l="en">1½ in</span><span data-l="es">1½ pulg</span></td></tr>
-            <tr><td><span data-l="en">Dining table, 30 in high</span><span data-l="es">Mesa de comedor, 30 pulg</span></td><td class="n"><span data-l="en">2½ in</span><span data-l="es">2½ pulg</span></td><td class="n"><span data-l="en">1¼ in</span><span data-l="es">1¼ pulg</span></td></tr>
-            <tr><td><span data-l="en">Chair seat, 18 in high</span><span data-l="es">Asiento de silla, 18 pulg</span></td><td class="n"><span data-l="en">1½ in</span><span data-l="es">1½ pulg</span></td><td class="n"><span data-l="en">¾ in</span><span data-l="es">¾ pulg</span></td></tr>
-            <tr><td><span data-l="en">Full bed, 54 × 75 in</span><span data-l="es">Cama full, 54 × 75 pulg</span></td><td class="n"><span data-l="en">4½ × 6¼ in</span><span data-l="es">4½ × 6¼ pulg</span></td><td class="n"><span data-l="en">2¼ × 3⅛ in</span><span data-l="es">2¼ × 3⅛ pulg</span></td></tr>
-            <tr><td><span data-l="en">Adult, 5 ft 6 in</span><span data-l="es">Adulto, 5 pies 6 pulg</span></td><td class="n"><span data-l="en">5½ in</span><span data-l="es">5½ pulg</span></td><td class="n"><span data-l="en">2¾ in</span><span data-l="es">2¾ pulg</span></td></tr>
-            <tr><td><span data-l="en">Dinner plate, 10 in</span><span data-l="es">Plato llano, 10 pulg</span></td><td class="n"><span data-l="en">≈ 13/16 in</span><span data-l="es">≈ 13/16 pulg</span></td><td class="n"><span data-l="en">≈ 7/16 in</span><span data-l="es">≈ 7/16 pulg</span></td></tr>
+            <tr><td><span data-l="en">Ceiling height, 8 ft</span><span data-l="es">Altura del techo, 8 pies</span></td><td class="n"><span data-l="en">16 in</span><span data-l="es">16 pulg</span></td><td class="n"><span data-l="en">8 in</span><span data-l="es">8 pulg</span></td><td class="n"><span data-l="en">4 in</span><span data-l="es">4 pulg</span></td></tr>
+            <tr><td><span data-l="en">Interior door, 80 × 32 in</span><span data-l="es">Puerta interior, 80 × 32 pulg</span></td><td class="n"><span data-l="en">13⅓ × 5⅓ in</span><span data-l="es">13⅓ × 5⅓ pulg</span></td><td class="n"><span data-l="en">6⅔ × 2⅔ in</span><span data-l="es">6⅔ × 2⅔ pulg</span></td><td class="n"><span data-l="en">3⅓ × 1⅓ in</span><span data-l="es">3⅓ × 1⅓ pulg</span></td></tr>
+            <tr><td><span data-l="en">Kitchen counter, 36 in high</span><span data-l="es">Tope de cocina, 36 pulg de alto</span></td><td class="n"><span data-l="en">6 in</span><span data-l="es">6 pulg</span></td><td class="n"><span data-l="en">3 in</span><span data-l="es">3 pulg</span></td><td class="n"><span data-l="en">1½ in</span><span data-l="es">1½ pulg</span></td></tr>
+            <tr><td><span data-l="en">Dining table, 30 in high</span><span data-l="es">Mesa de comedor, 30 pulg</span></td><td class="n"><span data-l="en">5 in</span><span data-l="es">5 pulg</span></td><td class="n"><span data-l="en">2½ in</span><span data-l="es">2½ pulg</span></td><td class="n"><span data-l="en">1¼ in</span><span data-l="es">1¼ pulg</span></td></tr>
+            <tr><td><span data-l="en">Chair seat, 18 in high</span><span data-l="es">Asiento de silla, 18 pulg</span></td><td class="n"><span data-l="en">3 in</span><span data-l="es">3 pulg</span></td><td class="n"><span data-l="en">1½ in</span><span data-l="es">1½ pulg</span></td><td class="n"><span data-l="en">¾ in</span><span data-l="es">¾ pulg</span></td></tr>
+            <tr><td><span data-l="en">Full bed, 54 × 75 in</span><span data-l="es">Cama full, 54 × 75 pulg</span></td><td class="n"><span data-l="en">9 × 12½ in</span><span data-l="es">9 × 12½ pulg</span></td><td class="n"><span data-l="en">4½ × 6¼ in</span><span data-l="es">4½ × 6¼ pulg</span></td><td class="n"><span data-l="en">2¼ × 3⅛ in</span><span data-l="es">2¼ × 3⅛ pulg</span></td></tr>
+            <tr><td><span data-l="en">Adult, 5 ft 6 in</span><span data-l="es">Adulto, 5 pies 6 pulg</span></td><td class="n"><span data-l="en">11 in</span><span data-l="es">11 pulg</span></td><td class="n"><span data-l="en">5½ in</span><span data-l="es">5½ pulg</span></td><td class="n"><span data-l="en">2¾ in</span><span data-l="es">2¾ pulg</span></td></tr>
+            <tr><td><span data-l="en">Dinner plate, 10 in</span><span data-l="es">Plato llano, 10 pulg</span></td><td class="n"><span data-l="en">1⅔ in</span><span data-l="es">1⅔ pulg</span></td><td class="n"><span data-l="en">≈ 13/16 in</span><span data-l="es">≈ 13/16 pulg</span></td><td class="n"><span data-l="en">≈ 7/16 in</span><span data-l="es">≈ 7/16 pulg</span></td></tr>
           </tbody>
         </table>
       </div>
       <div>
         <h3><span data-l="en">Checking scale before you buy or build</span><span data-l="es">Revisa la escala antes de comprar o construir</span></h3>
         <ul class="ticks">
-          <li><span data-l="en"><b>Measure one familiar thing.</b> A chair seat should be about 1½ in high in 1:12, or ¾ in in 1:24. If it isn't, the piece is a different scale.</span><span data-l="es"><b>Mide algo conocido.</b> El asiento de una silla debe medir unas 1½ pulg de alto en 1:12, o ¾ pulg en 1:24. Si no, la pieza es de otra escala.</span></li>
+          <li><span data-l="en"><b>Measure one familiar thing.</b> A chair seat should be about 3 in high in 1:6, 1½ in in 1:12, or ¾ in in 1:24. If it isn't, the piece is a different scale.</span><span data-l="es"><b>Mide algo conocido.</b> El asiento de una silla debe medir unas 3 pulg de alto en 1:6, 1½ pulg en 1:12, o ¾ pulg en 1:24. Si no, la pieza es de otra escala.</span></li>
           <li><span data-l="en"><b>Mixed scales show right away.</b> 1:24 furniture in a 1:12 room looks like children's furniture. 1:12 pieces won't fit in a 1:24 house at all.</span><span data-l="es"><b>Mezclar escalas se nota enseguida.</b> Muebles 1:24 en un cuarto 1:12 parecen muebles de niños. Las piezas 1:12 ni siquiera caben en una casa 1:24.</span></li>
           <li><span data-l="en"><b>Same scale, different spelling.</b> Listings may write 1:12, 1/12, 1 12 or “one-inch scale.” They all mean the same thing.</span><span data-l="es"><b>Misma escala, distinta forma de escribirla.</b> Los anuncios pueden decir 1:12, 1/12, 1 12 o “escala de una pulgada”. Todo significa lo mismo.</span></li>
-          <li><span data-l="en"><b>Working in metric?</b> Divide the real size in millimeters by 12 (or 24). A 900 mm counter becomes 75 mm.</span><span data-l="es"><b>¿Trabajas en métrico?</b> Divide la medida real en milímetros entre 12 (o 24). Un tope de cocina de 900 mm queda en 75 mm.</span></li>
+          <li><span data-l="en"><b>Working in metric?</b> Divide the real size in millimeters by 6, 12 or 24. A 900 mm counter becomes 75 mm.</span><span data-l="es"><b>¿Trabajas en métrico?</b> Divide la medida real en milímetros entre 6, 12 o 24. Un tope de cocina de 900 mm queda en 75 mm.</span></li>
         </ul>
       </div>
     </div>
+    <div class="shop-row"><span class="shop-lab"><span data-l="en">From the shop</span><span data-l="es">En la tienda</span></span><div class="shop-chips"><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=furniture+scale" target="_blank" rel="noopener"><span data-l="en">Furniture Scale Guide (1:6 to 1:48)</span><span data-l="es">Guía de muebles a escala (1:6 a 1:48)</span> →</a><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=conversion" target="_blank" rel="noopener"><span data-l="en">Scale Conversion Cheat Sheet</span><span data-l="es">Hoja rápida de conversión de escalas</span> →</a></div></div>
+
   </div>
 </section>
 
@@ -872,6 +902,8 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
         </ul>
       </div>
     </div>
+    <div class="shop-row"><span class="shop-lab"><span data-l="en">From the shop</span><span data-l="es">En la tienda</span></span><div class="shop-chips"><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=wallpaper" target="_blank" rel="noopener"><span data-l="en">Wallpaper & Flooring Guide</span><span data-l="es">Guía de papel tapiz y pisos</span> →</a><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=photography" target="_blank" rel="noopener"><span data-l="en">Miniature Photography Guide</span><span data-l="es">Guía de fotografía de miniaturas</span> →</a></div></div>
+
   </div>
 </section>
 
@@ -1019,6 +1051,8 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
         </ul>
       </div>
     </div>
+    <div class="shop-row"><span class="shop-lab"><span data-l="en">From the shop</span><span data-l="es">En la tienda</span></span><div class="shop-chips"><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=room+planner" target="_blank" rel="noopener"><span data-l="en">Room planners (1:6, 1:12, 1:24)</span><span data-l="es">Planificadores de cuartos (1:6, 1:12, 1:24)</span> →</a><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=floorplan" target="_blank" rel="noopener"><span data-l="en">Floorplan Planner with cutouts</span><span data-l="es">Planificador de planos con recortables</span> →</a><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=styling" target="_blank" rel="noopener"><span data-l="en">Room Styling Guide</span><span data-l="es">Guía de decoración</span> →</a></div></div>
+
   </div>
 </section>
 
