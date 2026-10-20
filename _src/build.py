@@ -94,6 +94,9 @@ for a, b in JS_FIX:
 os.makedirs(os.path.join(ROOT, "assets"), exist_ok=True)
 open(os.path.join(ROOT, "assets", "site.css"), "w", encoding="utf-8").write(css)
 open(os.path.join(ROOT, "assets", "site.js"), "w", encoding="utf-8").write(js)
+# version stamps so browsers fetch new CSS/JS right after each update
+CSS_V = hashlib.sha1(css.encode()).hexdigest()[:8]
+JS_V = hashlib.sha1(js.encode()).hexdigest()[:8]
 
 # ---------- pages ----------
 PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, desc en, desc es, card en, card es
@@ -221,14 +224,14 @@ def page(key, lang, content, title, desc, path_en, path_es, noindex=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v={CSS_V}">
 <script data-goatcounter="{GOAT}" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 {header(key, lang)}
 {content}
 {FOOTER}
-<script src="/assets/site.js"></script>
+<script src="/assets/site.js?v={JS_V}"></script>
 </body>
 </html>
 '''
