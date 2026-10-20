@@ -385,6 +385,32 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 .wip-grid img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .wip-grid figure:nth-child(2) img { object-position: center 18%; }
 .wip-grid figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 1.6rem .8rem .65rem; font: 500 var(--s-xs)/1.35 var(--f-mono); letter-spacing: .03em; color: #f3efe6; background: linear-gradient(transparent, rgba(8,10,9,.78)); }
+
+/* ---------- palette: rose & berry ---------- */
+:root {
+  --bg: #fbf6f1; --surface: #ffffff; --fg: #2a1a1f; --muted: #6f5a60; --line: #ead9d6;
+  --mat: #7a2840; --mat-deep: #5e1c30; --on-mat: #fbeff1; --on-mat-muted: #e6c3cb;
+  --grid: rgba(255,255,255,.09); --grid-major: rgba(255,255,255,.18);
+  --brass: #e8a5b4; --on-brass: #4a1424; --mark: #a8344f; --tint: #f6e8e8;
+  --rose: #a8344f; --gilt: #d9a7b2;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1a1214; --surface: #241a1d; --fg: #f2e6e8; --muted: #c4abb1; --line: #3d2c31;
+    --mat: #4f1b2b; --mat-deep: #3c1421; --on-mat: #f6e9ec; --on-mat-muted: #d9b6bf;
+    --grid: rgba(255,255,255,.06); --grid-major: rgba(255,255,255,.13);
+    --brass: #eab0bd; --on-brass: #3a0f1c; --mark: #ee97ab; --tint: #2c1f23; --rose: #e0849a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1a1214; --surface: #241a1d; --fg: #f2e6e8; --muted: #c4abb1; --line: #3d2c31;
+  --mat: #4f1b2b; --mat-deep: #3c1421; --on-mat: #f6e9ec; --on-mat-muted: #d9b6bf;
+  --grid: rgba(255,255,255,.06); --grid-major: rgba(255,255,255,.13);
+  --brass: #eab0bd; --on-brass: #3a0f1c; --mark: #ee97ab; --tint: #2c1f23; --rose: #e0849a;
+  color-scheme: dark;
+}
+.how { border-left-color: var(--rose); }
 </style>
 
 </head>
@@ -1268,7 +1294,7 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
     var rg = c.createRadialGradient(lx, ly + 14, 2, lx, ly + 40, 230);
     rg.addColorStop(0, "rgba(255,214,140,.55)"); rg.addColorStop(.35, "rgba(255,200,120,.16)"); rg.addColorStop(1, "rgba(255,200,120,0)");
     c.save(); c.globalCompositeOperation = "screen"; poly(c, [{x:O.l,y:O.t},{x:O.r,y:O.t},{x:O.r,y:O.b},{x:O.l,y:O.b}], rg); c.restore();
-    c.fillStyle = "#2f5b4e"; c.beginPath(); c.moveTo(lx - 7, ly); c.lineTo(lx + 7, ly); c.lineTo(lx + 22, ly + 18); c.lineTo(lx - 22, ly + 18); c.closePath(); c.fill();
+    c.fillStyle = "#7a2840"; c.beginPath(); c.moveTo(lx - 7, ly); c.lineTo(lx + 7, ly); c.lineTo(lx + 22, ly + 18); c.lineTo(lx - 22, ly + 18); c.closePath(); c.fill();
     c.fillStyle = "#ffe2a6"; c.beginPath(); c.ellipse(lx, ly + 19, 13, 3.2, 0, 0, Math.PI * 2); c.fill();
     // inner edge of the box opening
     c.strokeStyle = "rgba(40,22,8,.6)"; c.lineWidth = 2; c.strokeRect(O.l, O.t, O.r - O.l, O.b - O.t);
