@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dollhouse Scale Converter: 1:6, 1:12, 1:24 and 1:48</title>
+<meta name="description" content="Convert real sizes to dollhouse scale, see everyday furniture sizes at 1:6, 1:12 and 1:24, and learn to check a piece's scale before you buy.">
+<link rel="canonical" href="https://miniatureneststudio.com/scale/">
+<link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/scale/">
+<link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/escala/">
+<link rel="alternate" hreflang="x-default" href="https://miniatureneststudio.com/scale/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MiniatureNestStudio">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://miniatureneststudio.com/scale/">
+<meta property="og:title" content="Dollhouse Scale Converter: 1:6, 1:12, 1:24 and 1:48">
+<meta property="og:description" content="Convert real sizes to dollhouse scale, see everyday furniture sizes at 1:6, 1:12 and 1:24, and learn to check a piece's scale before you buy.">
+<meta property="og:image" content="https://miniatureneststudio.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script data-goatcounter="https://miniatureneststudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="/">Miniature<b>Nest</b>Studio</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="/#gallery">Gallery</a>
+      <a href="/start-here/">Start here</a>
+      <a href="/scale/" aria-current="page">Scale</a>
+      <a href="/printables/">Printables</a>
+      <a href="/room-boxes/">Room boxes</a>
+      <a href="/puerto-rican-house/">Puerto Rico</a>
+      <a href="/about/">About</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language / Idioma">
+      <a id="lang-en" href="/scale/" hreflang="en" lang="en" aria-current="true">EN</a>
+      <a id="lang-es" href="/es/escala/" hreflang="es" lang="es">ES</a>
+    </div>
+  </div>
+</header>
+<div class="ruler" aria-hidden="true" id="ruler"></div>
+
+<!-- ================= SCALE ================= -->
+<section class="part" id="scale">
+  <div class="room room-kitchen">
+    <div class="plaque">
+      <p class="kicker">Scale basics</p>
+      <h1>What “1:12” actually means</h1>
+    </div>
+  </div>
+  <div class="base" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="part-head">
+      <p>
+        Scale is a ratio. In 1:12, one inch in your miniature stands for twelve inches, one foot, in real life. Everything shrinks by the same amount, so a room only looks right when every piece in it uses the same scale.
+        
+      </p>
+    </div>
+
+    <div class="conv-row">
+
+      <form class="conv" id="conv" aria-labelledby="conv-title">
+        <h2 id="conv-title">Scale converter</h2>
+        <p class="hint">Type a real-life size to see it in miniature.</p>
+        <div class="fields">
+          <label class="f" for="c-val"><span>Real size</span>
+            <input id="c-val" type="number" inputmode="decimal" min="0" step="any" value="80">
+          </label>
+          <label class="f" for="c-unit"><span>Unit</span>
+            <select id="c-unit">
+              <option value="in" selected>in / pulg</option>
+              <option value="ft">ft / pies</option>
+              <option value="cm">cm</option>
+            </select>
+          </label>
+          <div class="f full"><span>Scale</span>
+            <div class="scales" role="group" aria-label="Scale">
+              <button type="button" data-scale="6" aria-pressed="false">1:6</button>
+              <button type="button" data-scale="12" aria-pressed="true">1:12</button>
+              <button type="button" data-scale="24" aria-pressed="false">1:24</button>
+              <button type="button" data-scale="48" aria-pressed="false">1:48</button>
+            </div>
+          </div>
+        </div>
+        <div class="result" aria-live="polite">
+          <div class="big" id="c-out">6.67 in</div>
+          <div class="sub" id="c-sub">≈ 6 11/16 in · 169 mm</div>
+        </div>
+        <div class="presets" aria-label="Examples">
+          <button type="button" data-v="80" data-u="in">Door 80 in</button>
+          <button type="button" data-v="8" data-u="ft">Ceiling 8 ft</button>
+          <button type="button" data-v="30" data-u="in">Table 30 in</button>
+          <button type="button" data-v="170" data-u="cm">Person 170 cm</button>
+        </div>
+      </form>
+      <div class="cards-col">
+        <div class="scales-grid">
+          <div class="sc">
+            <div>
+              <div class="ratio">1:6</div>
+              <div class="alias">Playscale · 2 in = 1 ft</div>
+              <p class="d">Twice the size of 1:12. The scale of fashion dolls and doll dioramas.</p>
+            </div>
+            <div class="bar"><span>16 in</span><i style="height:128px"></i></div>
+          </div>
+          <div class="sc">
+            <div>
+              <div class="ratio">1:12</div>
+              <div class="alias">One-inch scale · 1 in = 1 ft</div>
+              <p class="d">The standard dollhouse scale. The most furniture, kits and printables are made for it.</p>
+            </div>
+            <div class="bar"><span>8 in</span><i style="height:64px"></i></div>
+          </div>
+          <div class="sc">
+            <div>
+              <div class="ratio">1:24</div>
+              <div class="alias">Half scale · ½ in = 1 ft</div>
+              <p class="d">Half the size of 1:12. Good for book nooks, small kit houses and tight shelves.</p>
+            </div>
+            <div class="bar"><span>4 in</span><i style="height:32px"></i></div>
+          </div>
+          <div class="sc">
+            <div>
+              <div class="ratio">1:48</div>
+              <div class="alias">Quarter scale · ¼ in = 1 ft</div>
+              <p class="d">Tiny. Often used for a dollhouse inside a dollhouse.</p>
+            </div>
+            <div class="bar"><span>2 in</span><i style="height:16px"></i></div>
+          </div>
+        </div>
+        <p class="bar-note">Bars show an 8 ft ceiling at each scale, drawn to the same proportion.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="tbl">
+        <table>
+          <caption>Everyday sizes in miniature</caption>
+          <thead>
+            <tr><th>Real item</th><th>1:6</th><th>1:12</th><th>1:24</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ceiling height, 8 ft</td><td class="n">16 in</td><td class="n">8 in</td><td class="n">4 in</td></tr>
+            <tr><td>Interior door, 80 × 32 in</td><td class="n">13⅓ × 5⅓ in</td><td class="n">6⅔ × 2⅔ in</td><td class="n">3⅓ × 1⅓ in</td></tr>
+            <tr><td>Kitchen counter, 36 in high</td><td class="n">6 in</td><td class="n">3 in</td><td class="n">1½ in</td></tr>
+            <tr><td>Dining table, 30 in high</td><td class="n">5 in</td><td class="n">2½ in</td><td class="n">1¼ in</td></tr>
+            <tr><td>Chair seat, 18 in high</td><td class="n">3 in</td><td class="n">1½ in</td><td class="n">¾ in</td></tr>
+            <tr><td>Full bed, 54 × 75 in</td><td class="n">9 × 12½ in</td><td class="n">4½ × 6¼ in</td><td class="n">2¼ × 3⅛ in</td></tr>
+            <tr><td>Adult, 5 ft 6 in</td><td class="n">11 in</td><td class="n">5½ in</td><td class="n">2¾ in</td></tr>
+            <tr><td>Dinner plate, 10 in</td><td class="n">1⅔ in</td><td class="n">≈ 13/16 in</td><td class="n">≈ 7/16 in</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3>Checking scale before you buy or build</h3>
+        <ul class="ticks">
+          <li><b>Measure one familiar thing.</b> A chair seat should be about 3 in high in 1:6, 1½ in in 1:12, or ¾ in in 1:24. If it isn't, the piece is a different scale.</li>
+          <li><b>Mixed scales show right away.</b> 1:24 furniture in a 1:12 room looks like children's furniture. 1:12 pieces won't fit in a 1:24 house at all.</li>
+          <li><b>Same scale, different spelling.</b> Listings may write 1:12, 1/12, 1 12 or “one-inch scale.” They all mean the same thing.</li>
+          <li><b>Working in metric?</b> Divide the real size in millimeters by 6, 12 or 24. A 900 mm counter becomes 75 mm.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="shop-row"><span class="shop-lab">From the shop</span><div class="shop-chips"><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=furniture+scale" target="_blank" rel="noopener">Furniture Scale Guide (1:6 to 1:48) →</a><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=conversion" target="_blank" rel="noopener">Scale Conversion Cheat Sheet →</a></div></div>
+
+  </div>
+</section>
+<div class="wrap"><div class="pager"><a href="/printables/">Next: Printables →</a></div></div>
+
+<div class="trim trim-yellow" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="/">Miniature<b>Nest</b>Studio</a>
+      <p style="margin-top:.5rem">Planners and guides for dollhouse rooms, from 1:6 to 1:48.</p>
+    </div>
+    <a class="btn solid" href="https://www.etsy.com/shop/MiniatureNestStudio" target="_blank" rel="noopener">Visit the shop on Etsy →</a>
+  </div>
+</footer>
+
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

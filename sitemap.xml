@@ -1,7 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://miniatureneststudio.com/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/start-here/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/start-here/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/empieza-aqui/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/empieza-aqui/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/start-here/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/empieza-aqui/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/scale/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/scale/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/escala/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/escala/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/scale/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/escala/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/printables/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/printables/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/imprimibles/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/imprimibles/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/printables/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/imprimibles/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/room-boxes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/room-boxes/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/roombox/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/roombox/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/room-boxes/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/roombox/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/puerto-rican-house/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/puerto-rican-house/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/casa-puertorriquena/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/casa-puertorriquena/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/puerto-rican-house/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/casa-puertorriquena/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/sobre-mi/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/sobre-mi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/sobre-mi/"/>
   </url>
 </urlset>

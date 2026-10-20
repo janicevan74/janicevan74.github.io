@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Convertidor de escala para casas de muñecas: 1:6, 1:12, 1:24 y 1:48</title>
+<meta name="description" content="Convierte medidas reales a escala de casa de muñecas, mira medidas comunes de muebles en 1:6, 1:12 y 1:24 y aprende a revisar la escala antes de comprar.">
+<link rel="canonical" href="https://miniatureneststudio.com/es/escala/">
+<link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/scale/">
+<link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/escala/">
+<link rel="alternate" hreflang="x-default" href="https://miniatureneststudio.com/scale/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MiniatureNestStudio">
+<meta property="og:locale" content="es_US">
+<meta property="og:url" content="https://miniatureneststudio.com/es/escala/">
+<meta property="og:title" content="Convertidor de escala para casas de muñecas: 1:6, 1:12, 1:24 y 1:48">
+<meta property="og:description" content="Convierte medidas reales a escala de casa de muñecas, mira medidas comunes de muebles en 1:6, 1:12 y 1:24 y aprende a revisar la escala antes de comprar.">
+<meta property="og:image" content="https://miniatureneststudio.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script data-goatcounter="https://miniatureneststudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="/es/">Miniature<b>Nest</b>Studio</a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="/es/#gallery">Galería</a>
+      <a href="/es/empieza-aqui/">Empieza aquí</a>
+      <a href="/es/escala/" aria-current="page">Escala</a>
+      <a href="/es/imprimibles/">Imprimibles</a>
+      <a href="/es/roombox/">Roombox</a>
+      <a href="/es/casa-puertorriquena/">Puerto Rico</a>
+      <a href="/es/sobre-mi/">Sobre mí</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language / Idioma">
+      <a id="lang-en" href="/scale/" hreflang="en" lang="en">EN</a>
+      <a id="lang-es" href="/es/escala/" hreflang="es" lang="es" aria-current="true">ES</a>
+    </div>
+  </div>
+</header>
+<div class="ruler" aria-hidden="true" id="ruler"></div>
+
+<!-- ================= SCALE ================= -->
+<section class="part" id="scale">
+  <div class="room room-kitchen">
+    <div class="plaque">
+      <p class="kicker">Lo básico de la escala</p>
+      <h1>Qué significa “1:12”</h1>
+    </div>
+  </div>
+  <div class="base" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="part-head">
+      <p>
+        
+        La escala es una proporción. En 1:12, una pulgada en tu miniatura representa doce pulgadas, un pie, en la vida real. Todo se reduce en la misma medida, así que un cuarto solo se ve bien cuando todas sus piezas usan la misma escala.
+      </p>
+    </div>
+
+    <div class="conv-row">
+
+      <form class="conv" id="conv" aria-labelledby="conv-title">
+        <h2 id="conv-title">Convertidor de escala</h2>
+        <p class="hint">Escribe una medida real para verla en miniatura.</p>
+        <div class="fields">
+          <label class="f" for="c-val"><span>Medida real</span>
+            <input id="c-val" type="number" inputmode="decimal" min="0" step="any" value="80">
+          </label>
+          <label class="f" for="c-unit"><span>Unidad</span>
+            <select id="c-unit">
+              <option value="in" selected>in / pulg</option>
+              <option value="ft">ft / pies</option>
+              <option value="cm">cm</option>
+            </select>
+          </label>
+          <div class="f full"><span>Escala</span>
+            <div class="scales" role="group" aria-label="Scale">
+              <button type="button" data-scale="6" aria-pressed="false">1:6</button>
+              <button type="button" data-scale="12" aria-pressed="true">1:12</button>
+              <button type="button" data-scale="24" aria-pressed="false">1:24</button>
+              <button type="button" data-scale="48" aria-pressed="false">1:48</button>
+            </div>
+          </div>
+        </div>
+        <div class="result" aria-live="polite">
+          <div class="big" id="c-out">6.67 in</div>
+          <div class="sub" id="c-sub">≈ 6 11/16 in · 169 mm</div>
+        </div>
+        <div class="presets" aria-label="Examples">
+          <button type="button" data-v="80" data-u="in">Puerta 80 pulg</button>
+          <button type="button" data-v="8" data-u="ft">Techo 8 pies</button>
+          <button type="button" data-v="30" data-u="in">Mesa 30 pulg</button>
+          <button type="button" data-v="170" data-u="cm">Persona 170 cm</button>
+        </div>
+      </form>
+      <div class="cards-col">
+        <div class="scales-grid">
+          <div class="sc">
+            <div>
+              <div class="ratio">1:6</div>
+              <div class="alias">Escala de muñecas · 2 pulg = 1 pie</div>
+              <p class="d">El doble de 1:12. La escala de las muñecas de moda y sus dioramas.</p>
+            </div>
+            <div class="bar"><span>16 pulg</span><i style="height:128px"></i></div>
+          </div>
+          <div class="sc">
+            <div>
+              <div class="ratio">1:12</div>
+              <div class="alias">Escala de una pulgada · 1 pulg = 1 pie</div>
+              <p class="d">La escala estándar de casas de muñecas. Es la que tiene más muebles, kits e imprimibles.</p>
+            </div>
+            <div class="bar"><span>8 pulg</span><i style="height:64px"></i></div>
+          </div>
+          <div class="sc">
+            <div>
+              <div class="ratio">1:24</div>
+              <div class="alias">Media escala · ½ pulg = 1 pie</div>
+              <p class="d">La mitad de 1:12. Ideal para book nooks, casitas en kit y repisas pequeñas.</p>
+            </div>
+            <div class="bar"><span>4 pulg</span><i style="height:32px"></i></div>
+          </div>
+          <div class="sc">
+            <div>
+              <div class="ratio">1:48</div>
+              <div class="alias">Escala de un cuarto · ¼ pulg = 1 pie</div>
+              <p class="d">Diminuta. Se usa a menudo para una casita dentro de otra casa de muñecas.</p>
+            </div>
+            <div class="bar"><span>2 pulg</span><i style="height:16px"></i></div>
+          </div>
+        </div>
+        <p class="bar-note">Las barras muestran un techo de 8 pies en cada escala, dibujadas en la misma proporción.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="tbl">
+        <table>
+          <caption>Medidas comunes en miniatura</caption>
+          <thead>
+            <tr><th>Objeto real</th><th>1:6</th><th>1:12</th><th>1:24</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Altura del techo, 8 pies</td><td class="n">16 pulg</td><td class="n">8 pulg</td><td class="n">4 pulg</td></tr>
+            <tr><td>Puerta interior, 80 × 32 pulg</td><td class="n">13⅓ × 5⅓ pulg</td><td class="n">6⅔ × 2⅔ pulg</td><td class="n">3⅓ × 1⅓ pulg</td></tr>
+            <tr><td>Tope de cocina, 36 pulg de alto</td><td class="n">6 pulg</td><td class="n">3 pulg</td><td class="n">1½ pulg</td></tr>
+            <tr><td>Mesa de comedor, 30 pulg</td><td class="n">5 pulg</td><td class="n">2½ pulg</td><td class="n">1¼ pulg</td></tr>
+            <tr><td>Asiento de silla, 18 pulg</td><td class="n">3 pulg</td><td class="n">1½ pulg</td><td class="n">¾ pulg</td></tr>
+            <tr><td>Cama full, 54 × 75 pulg</td><td class="n">9 × 12½ pulg</td><td class="n">4½ × 6¼ pulg</td><td class="n">2¼ × 3⅛ pulg</td></tr>
+            <tr><td>Adulto, 5 pies 6 pulg</td><td class="n">11 pulg</td><td class="n">5½ pulg</td><td class="n">2¾ pulg</td></tr>
+            <tr><td>Plato llano, 10 pulg</td><td class="n">1⅔ pulg</td><td class="n">≈ 13/16 pulg</td><td class="n">≈ 7/16 pulg</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3>Revisa la escala antes de comprar o construir</h3>
+        <ul class="ticks">
+          <li><b>Mide algo conocido.</b> El asiento de una silla debe medir unas 3 pulg de alto en 1:6, 1½ pulg en 1:12, o ¾ pulg en 1:24. Si no, la pieza es de otra escala.</li>
+          <li><b>Mezclar escalas se nota enseguida.</b> Muebles 1:24 en un cuarto 1:12 parecen muebles de niños. Las piezas 1:12 ni siquiera caben en una casa 1:24.</li>
+          <li><b>Misma escala, distinta forma de escribirla.</b> Los anuncios pueden decir 1:12, 1/12, 1 12 o “escala de una pulgada”. Todo significa lo mismo.</li>
+          <li><b>¿Trabajas en métrico?</b> Divide la medida real en milímetros entre 6, 12 o 24. Un tope de cocina de 900 mm queda en 75 mm.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="shop-row"><span class="shop-lab">En la tienda</span><div class="shop-chips"><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=furniture+scale" target="_blank" rel="noopener">Guía de muebles a escala (1:6 a 1:48) →</a><a class="shop-chip" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=conversion" target="_blank" rel="noopener">Hoja rápida de conversión de escalas →</a></div></div>
+
+  </div>
+</section>
+<div class="wrap"><div class="pager"><a href="/es/imprimibles/">Siguiente: Imprimibles →</a></div></div>
+
+<div class="trim trim-yellow" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="/es/">Miniature<b>Nest</b>Studio</a>
+      <p style="margin-top:.5rem">Planificadores y guías para cuartos de casas de muñecas, de 1:6 a 1:48.</p>
+    </div>
+    <a class="btn solid" href="https://www.etsy.com/shop/MiniatureNestStudio" target="_blank" rel="noopener">Visita la tienda en Etsy →</a>
+  </div>
+</footer>
+
+
+<script src="/assets/site.js"></script>
+</body>
+</html>
