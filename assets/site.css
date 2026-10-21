@@ -428,6 +428,8 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 .shop-chip { text-decoration: none; font-weight: 600; font-size: var(--s-sm); padding: .45rem .85rem; border-radius: 999px; background: var(--tint); color: var(--fg); border: 1px solid var(--line); }
 .shop-chip:hover { border-color: var(--mark); color: var(--mark); }
 
+.foot-links { display: flex; flex-wrap: wrap; gap: .6rem; }
+
 /* ---------- multi-page additions ---------- */
 .lang a { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .06em; text-decoration: none; color: var(--on-mat-muted); padding: .45rem .7rem; border-radius: 999px; }
 .lang a[aria-current="true"] { background: var(--brass); color: var(--on-brass); }
