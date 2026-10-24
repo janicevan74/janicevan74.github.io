@@ -61,6 +61,46 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/casa-puertorriquena/"/>
   </url>
   <url>
+    <loc>https://miniatureneststudio.com/which-scale/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/which-scale/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/que-escala/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/que-escala/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/which-scale/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/que-escala/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/scale-ruler/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/scale-ruler/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/regla-de-escala/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/regla-de-escala/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/scale-ruler/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/regla-de-escala/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/glue-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/glue-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/guia-de-pegamentos/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/guia-de-pegamentos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/glue-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/guia-de-pegamentos/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/preguntas/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/preguntas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/preguntas/"/>
+  </url>
+  <url>
     <loc>https://miniatureneststudio.com/about/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/about/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/sobre-mi/"/>

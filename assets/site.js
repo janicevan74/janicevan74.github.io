@@ -389,3 +389,28 @@
   document.querySelectorAll(".lang button").forEach(function (b) { b.addEventListener("click", function () { setTimeout(count, 0); }); });
   count();
 })();
+
+// ---- scale quiz ----
+(function () {
+  var f = document.getElementById("quiz"); if (!f) return;
+  var out = document.getElementById("quiz-out"), msg = document.getElementById("quiz-msg");
+  function show(key) {
+    out.querySelectorAll("[data-res]").forEach(function (d) { d.hidden = d.getAttribute("data-res") !== key; });
+  }
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var score = { "12": 0, "24": 0, "6": 0, "48": 0 }, answered = 0;
+    ["q1", "q2", "q3", "q4"].forEach(function (n) {
+      var c = f.querySelector('input[name="' + n + '"]:checked'); if (!c) return;
+      answered++;
+      c.value.split(",").forEach(function (p) { var kv = p.split(":"); score[kv[0]] += Number(kv[1]); });
+    });
+    if (answered < 4) { msg.hidden = false; return; }
+    msg.hidden = true;
+    var best = "12";
+    ["12", "24", "6", "48"].forEach(function (k) { if (score[k] > score[best]) best = k; });
+    show(best);
+    if (window.innerWidth < 860) out.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  f.addEventListener("reset", function () { msg.hidden = true; show("wait"); });
+})();

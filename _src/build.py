@@ -31,7 +31,11 @@ BLOCKS = {
     "scale": block("<!-- ================= SCALE", "<!-- ================= PRINTABLES"),
     "printables": block("<!-- ================= PRINTABLES", "<!-- ================= ROOM BOX"),
     "roombox": block("<!-- ================= ROOM BOX", "<!-- ================= PUERTO RICO"),
-    "puertorico": block("<!-- ================= PUERTO RICO", "<!-- ================= ABOUT"),
+    "puertorico": block("<!-- ================= PUERTO RICO", "<!-- ================= WHICH SCALE"),
+    "which": block("<!-- ================= WHICH SCALE", "<!-- ================= SCALE RULER"),
+    "ruler": block("<!-- ================= SCALE RULER", "<!-- ================= GLUE GUIDE"),
+    "glue": block("<!-- ================= GLUE GUIDE", "<!-- ================= FAQ"),
+    "faq": block("<!-- ================= FAQ", "<!-- ================= ABOUT"),
     "about": block("<!-- ================= ABOUT", "<div class=\"trim trim-yellow\""),
 }
 
@@ -73,6 +77,15 @@ css += """
 .pager a { text-decoration: none; font-weight: 600; color: var(--mark); border: 1px solid var(--line); background: var(--surface); padding: .7rem 1.1rem; border-radius: 999px; }
 .pager a:hover { border-color: var(--mark); }
 .notfound { padding-block: clamp(3rem, 8vw, 6rem); display: grid; gap: 1rem; justify-items: start; }
+footer .wrap.foot-nav { display: block; padding-top: 0; padding-bottom: 2rem; }
+.foot-nav { font-size: var(--s-sm); color: var(--on-mat-muted); line-height: 2; }
+.foot-nav a { color: var(--on-mat-muted); text-decoration: none; white-space: nowrap; }
+.foot-nav a:hover { color: var(--on-mat); text-decoration: underline; }
+.ex-h2 { margin-top: 2.6rem; }
+.ex-grid4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 900px) { .ex-grid4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .ex-grid4 { grid-template-columns: minmax(0, 1fr); } }
+.ex-tool { border-top-color: var(--brass); background: var(--tint); }
 .notfound h1 { font-family: var(--f-display); font-weight: 400; font-size: clamp(2rem, 5vw, 3rem); }
 """
 
@@ -130,6 +143,26 @@ PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, 
      "Zinc roofs, rejas, ventanas Miami and the details of the Puerto Rican cocina, sala, balcón and colmado, with measurements at 1:6, 1:12 and 1:24.",
      "Techos de zinc, rejas, ventanas Miami y los detalles de la cocina, sala, balcón y colmado puertorriqueños, con medidas en 1:6, 1:12 y 1:24.",
      "Zinc roofs, rejas and the rooms of a Puerto Rican home", "Techos de zinc, rejas y los cuartos de una casa boricua"),
+    ("which", "/which-scale/", "/es/que-escala/", ["which"], "Which scale?", "¿Qué escala?",
+     "Which Dollhouse Scale Should I Start With? (Quiz)", "¿Con qué escala de casa de muñecas empiezo? (Prueba)",
+     "Answer four quick questions and get a suggested miniature scale (1:6, 1:12 or 1:24), with the size of a typical room at that scale.",
+     "Contesta cuatro preguntas rápidas y te sugerimos una escala de miniaturas (1:6, 1:12 o 1:24), con el tamaño de un cuarto típico en esa escala.",
+     "A 4-question quiz to pick your first scale", "Una prueba de 4 preguntas para escoger tu escala"),
+    ("ruler", "/scale-ruler/", "/es/regla-de-escala/", ["ruler"], "Scale ruler", "Regla de escala",
+     "Free Printable Miniature Scale Ruler (1:6, 1:12, 1:24, 1:48)", "Regla de escala imprimible gratis (1:6, 1:12, 1:24, 1:48)",
+     "A free one-page PDF with dollhouse scale rulers in feet and metres. Hold it up to any piece and read its real-life size. US Letter and A4.",
+     "Un PDF gratis de una página con reglas de escala en pies y metros. Ponla al lado de cualquier pieza y lee su tamaño real. Tamaño carta y A4.",
+     "Free printable PDF: read any piece's real size", "PDF gratis: lee el tamaño real de cualquier pieza"),
+    ("glue", "/glue-guide/", "/es/guia-de-pegamentos/", ["glue"], "Glue guide", "Guía de pegamentos",
+     "Which Glue for Miniatures? Glue Guide for Dollhouse Building", "¿Qué pegamento usar en miniaturas? Guía de pegamentos",
+     "Which glue to use for paper, wallpaper, wood, fabric, plastic, metal and foam in dollhouse miniatures, what to avoid, and how long each takes to hold.",
+     "Qué pegamento usar para papel, papel tapiz, madera, tela, plástico, metal y foam en miniaturas, qué evitar y cuánto tarda cada uno.",
+     "Which glue for paper, wood, fabric, plastic and foam", "Qué pegamento para papel, madera, tela, plástico y foam"),
+    ("faq", "/faq/", "/es/preguntas/", ["faq"], "FAQ", "Preguntas",
+     "Dollhouse Miniatures FAQ for Beginners", "Preguntas frecuentes de miniaturas para principiantes",
+     "Short answers to beginner questions about dollhouse miniatures: cost, scale, where to buy, mixing scales, lighting without wiring and fixing wallpaper.",
+     "Respuestas cortas a preguntas de principiantes: costo, escala, dónde comprar, mezclar escalas, luces sin cables y cómo arreglar el papel tapiz.",
+     "Questions beginners ask, answered", "Respuestas a preguntas de principiantes"),
     ("about", "/about/", "/es/sobre-mi/", ["about"], "About", "Sobre mí",
      "About Janice · MiniatureNestStudio", "Sobre mí · MiniatureNestStudio",
      "Meet Janice, the Puerto Rican maker behind MiniatureNestStudio's dollhouse planners and guides.",
@@ -138,6 +171,9 @@ PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, 
 ]
 P = {p[0]: p for p in PAGES}
 SECTIONS = [p for p in PAGES if p[0] != "home"]
+NAV = [P[k] for k in ("start", "scale", "printables", "roombox", "puertorico", "about")]
+TOOLS = [P[k] for k in ("which", "ruler", "glue", "faq")]
+ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "faq", "about")]
 L = {"en": 1, "es": 2}
 
 def strip_lang(html, lang):
@@ -151,14 +187,19 @@ def explore(lang):
     i = 10 if lang == "en" else 11
     cards = "".join(
         f'<a class="ex-card" href="{p[L[lang]]}"><h3>{p[4] if lang == "en" else p[5]}</h3><p>{p[i]}</p>'
-        f'<span class="go">{"Read" if lang == "en" else "Ver"} →</span></a>' for p in SECTIONS)
+        f'<span class="go">{"Read" if lang == "en" else "Ver"} →</span></a>' for p in NAV)
+    tools = "".join(
+        f'<a class="ex-card ex-tool" href="{p[L[lang]]}"><h3>{p[4] if lang == "en" else p[5]}</h3><p>{p[i]}</p>'
+        f'<span class="go">{"Open" if lang == "en" else "Abrir"} →</span></a>' for p in TOOLS)
     head = "Explore the guides" if lang == "en" else "Explora las guías"
-    return f'<section class="explore"><div class="wrap"><h2>{head}</h2><div class="ex-grid">{cards}</div></div></section>\n'
+    head2 = "Beginner toolkit" if lang == "en" else "Herramientas para principiantes"
+    return (f'<section class="explore"><div class="wrap"><h2>{head}</h2><div class="ex-grid">{cards}</div>'
+            f'<h2 class="ex-h2">{head2}</h2><div class="ex-grid ex-grid4">{tools}</div></div></section>\n')
 
 def header(cur, lang):
     links = "".join(
         f'\n      <a href="{p[L[lang]]}"' + (' aria-current="page"' if p[0] == cur else "") + f'>{p[4] if lang == "en" else p[5]}</a>'
-        for p in SECTIONS)
+        for p in NAV)
     gal = P["home"][L[lang]] + "#gallery"
     links = f'\n      <a href="{gal}">{"Gallery" if lang == "en" else "Galería"}</a>' + links
     pg = P[cur] if cur in P else P["home"]
@@ -181,13 +222,17 @@ def header(cur, lang):
 FOOTER = BLOCKS_FOOT = externalize(body[body.index('<div class="trim trim-yellow"'):])
 
 def pager(cur, lang):
-    keys = [p[0] for p in SECTIONS]
+    keys = [p[0] for p in ORDER]
     if cur not in keys: return ""
     i = keys.index(cur)
     if i == len(keys) - 1: return ""
-    n = SECTIONS[i + 1]
+    n = ORDER[i + 1]
     label = ("Next: " if lang == "en" else "Siguiente: ") + (n[4] if lang == "en" else n[5])
     return f'<div class="wrap"><div class="pager"><a href="{n[L[lang]]}">{label} →</a></div></div>\n'
+
+def foot_nav(lang):
+    links = " · ".join(f'<a href="{p[L[lang]]}">{p[4] if lang == "en" else p[5]}</a>' for p in ORDER)
+    return f'  <div class="wrap foot-nav">{links}</div>\n'
 
 def promote_h1(html):
     return html.replace("<h2>", "<h1>", 1).replace("</h2>", "</h1>", 1)
@@ -235,7 +280,10 @@ def page(key, lang, content, title, desc, path_en, path_es, noindex=False):
 </body>
 </html>
 '''
+    html = html.replace("</footer>", foot_nav(lang) + "</footer>", 1)
     html = strip_lang(html, lang)
+    html = re.sub(r'href="@@(\w+)"', lambda m: f'href="{P[m.group(1)][L[lang]]}"', html)
+    assert "@@" not in html
     html = html.replace('href="#top" data-go="top"', f'href="{P["home"][L[lang]]}"')
     return html.replace("&amp;amp;", "&amp;")
 
