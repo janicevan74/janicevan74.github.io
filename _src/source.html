@@ -499,6 +499,18 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 .faq-item[open] summary::after { content: "−"; }
 .faq-item p { padding-bottom: 1rem; color: var(--fg); }
 .faq-item a, .callout a { color: var(--mark); }
+.prod-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; margin-top: 2rem; }
+@media (max-width: 720px) { .prod-grid { grid-template-columns: minmax(0, 1fr); } }
+.prod { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+.prod img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.prod-body { padding: 1.1rem 1.2rem 1.3rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
+.prod-scale { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .08em; color: var(--mark); }
+.prod h3 { font-family: var(--f-display); font-weight: 400; font-size: 1.5rem; line-height: 1.15; }
+.prod-meta { font-size: var(--s-sm); color: var(--muted); }
+.prod-buy { margin-top: auto; padding-top: .4rem; display: flex; align-items: center; justify-content: space-between; gap: .8rem; flex-wrap: wrap; }
+.prod-price { font-family: var(--f-display); font-size: 1.6rem; color: var(--fg); }
+.prod .btn.solid { background: var(--mat); color: var(--on-mat); border-color: var(--mat); }
+.prod-note { margin-top: 1.4rem; }
 </style>
 
 </head>
@@ -1506,6 +1518,65 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
       </details>
     </div>
     <div class="shop-row"><span class="shop-lab"><span data-l="en">From the shop</span><span data-l="es">En la tienda</span></span><div class="shop-chips"><a class="shop-chip" href="https://www.etsy.com/listing/4580332681" target="_blank" rel="noopener"><span data-l="en">Planner Bundle</span><span data-l="es">Paquete de planificadores</span> →</a><a class="shop-chip" href="https://www.etsy.com/listing/4580324948" target="_blank" rel="noopener"><span data-l="en">Scale Conversion Cheat Sheet</span><span data-l="es">Hoja rápida de conversión de escalas</span> →</a></div></div>
+  </div>
+</section>
+
+<!-- ================= SHOP ================= -->
+<section class="part" id="shop">
+  <div class="room room-dining">
+    <div class="plaque">
+      <p class="kicker"><span data-l="en">Shop</span><span data-l="es">Tienda</span></p>
+      <h2><span data-l="en">Room planners</span><span data-l="es">Planificadores de cuartos</span></h2>
+    </div>
+  </div>
+  <div class="base" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="part-head">
+      <p><span data-l="en">Printable PDF planners that take a room from idea to finished build. Undated, so you can reuse them for every project, and they work on paper or in note apps like GoodNotes. Instant download after purchase.</span><span data-l="es">Planificadores en PDF imprimibles que llevan un cuarto de la idea a la construcción terminada. Sin fechas, así que los puedes usar en cada proyecto, en papel o en apps de notas como GoodNotes. Descarga inmediata después de la compra.</span></p>
+    </div>
+    <div class="prod-grid">
+      <article class="prod">
+        <img src="/assets/img/planner-1-12.jpg" width="900" height="900" alt="1:12 Miniature Room Planner: cover and two inside pages" loading="lazy">
+        <div class="prod-body">
+          <p class="prod-scale">1:12</p>
+          <h3><span data-l="en">1:12 Miniature Room Planner</span><span data-l="es">Planificador de cuartos 1:12</span></h3>
+          <p><span data-l="en">For one-inch scale, the most common dollhouse size. Sketch your idea, record measurements, plan the room on a grid, decide what to buy and track the build to the finished room.</span><span data-l="es">Para la escala de una pulgada, el tamaño de casa de muñecas más común. Apunta tu idea, anota medidas, planifica el cuarto en cuadrícula, decide qué comprar y sigue la construcción hasta el cuarto terminado.</span></p>
+          <p class="prod-meta"><span data-l="en">10 pages · PDF · US Letter</span><span data-l="es">10 páginas · PDF · tamaño carta</span></p>
+          <div class="prod-buy"><span class="prod-price">$7.99</span><a class="btn solid" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=1%3A12+room+planner" target="_blank" rel="noopener"><span data-l="en">Buy on Etsy</span><span data-l="es">Comprar en Etsy</span> →</a></div>
+        </div>
+      </article>
+      <article class="prod">
+        <img src="/assets/img/planner-1-6.jpg" width="900" height="900" alt="1:6 Miniature Room Planner: cover and two inside pages" loading="lazy">
+        <div class="prod-body">
+          <p class="prod-scale">1:6</p>
+          <h3><span data-l="en">1:6 Miniature Room Planner</span><span data-l="es">Planificador de cuartos 1:6</span></h3>
+          <p><span data-l="en">For playscale rooms that fit 11–12 in fashion dolls. Same step-by-step pages as the 1:12 planner, with 1:6 measurements and quick-reference sizes.</span><span data-l="es">Para cuartos en escala de muñecas de 11–12 pulg. Las mismas páginas paso a paso del planificador 1:12, con medidas y referencias rápidas en 1:6.</span></p>
+          <p class="prod-meta"><span data-l="en">10 pages · PDF · US Letter</span><span data-l="es">10 páginas · PDF · tamaño carta</span></p>
+          <div class="prod-buy"><span class="prod-price">$7.99</span><a class="btn solid" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=1%3A6+room+planner" target="_blank" rel="noopener"><span data-l="en">Buy on Etsy</span><span data-l="es">Comprar en Etsy</span> →</a></div>
+        </div>
+      </article>
+      <article class="prod">
+        <img src="/assets/img/planner-1-24.jpg" width="900" height="900" alt="1:24 Miniature Room Planner: cover and two inside pages" loading="lazy">
+        <div class="prod-body">
+          <p class="prod-scale">1:24</p>
+          <h3><span data-l="en">1:24 Miniature Room Planner</span><span data-l="es">Planificador de cuartos 1:24</span></h3>
+          <p><span data-l="en">For half-scale houses and small room boxes. Measurements, a room plan grid, a 1:24 quick reference, shopping list and build tracker.</span><span data-l="es">Para casas en media escala y roombox pequeños. Medidas, cuadrícula para el plano, referencia rápida en 1:24, lista de compras y control de construcción.</span></p>
+          <p class="prod-meta"><span data-l="en">10 pages · PDF · US Letter</span><span data-l="es">10 páginas · PDF · tamaño carta</span></p>
+          <div class="prod-buy"><span class="prod-price">$4.99</span><a class="btn solid" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=1%3A24+room+planner" target="_blank" rel="noopener"><span data-l="en">Buy on Etsy</span><span data-l="es">Comprar en Etsy</span> →</a></div>
+        </div>
+      </article>
+      <article class="prod">
+        <img src="/assets/img/planner-1-24-kitchen.jpg" width="900" height="900" alt="1:24 Kitchen Room Planner: cover and two inside pages" loading="lazy">
+        <div class="prod-body">
+          <p class="prod-scale">1:24</p>
+          <h3><span data-l="en">1:24 Kitchen Room Planner</span><span data-l="es">Planificador de cocina 1:24</span></h3>
+          <p><span data-l="en">A planner just for kitchens: measurements, floor plan, cabinet planner, appliance and fixture tracker, materials and finishes, sourcing list, styling and a build tracker.</span><span data-l="es">Un planificador solo para cocinas: medidas, plano, planificador de gabinetes, lista de enseres y accesorios, materiales y acabados, lista de compras, decoración y control de construcción.</span></p>
+          <p class="prod-meta"><span data-l="en">11 pages · PDF · US Letter</span><span data-l="es">11 páginas · PDF · tamaño carta</span></p>
+          <div class="prod-buy"><span class="prod-price">$7.50</span><a class="btn solid" href="https://www.etsy.com/shop/MiniatureNestStudio?search_query=kitchen+planner" target="_blank" rel="noopener"><span data-l="en">Buy on Etsy</span><span data-l="es">Comprar en Etsy</span> →</a></div>
+        </div>
+      </article>
+    </div>
+    <p class="dl-note prod-note"><span data-l="en">Digital download: nothing is shipped. Prices in US dollars on Etsy. Not sure which scale? Take the <a href="@@which">scale quiz</a>.</span><span data-l="es">Descarga digital: no se envía nada por correo. Precios en dólares en Etsy. ¿No sabes qué escala? Haz la <a href="@@which">prueba de escala</a>.</span></p>
   </div>
 </section>
 

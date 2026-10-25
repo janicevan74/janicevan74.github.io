@@ -35,7 +35,8 @@ BLOCKS = {
     "which": block("<!-- ================= WHICH SCALE", "<!-- ================= SCALE RULER"),
     "ruler": block("<!-- ================= SCALE RULER", "<!-- ================= GLUE GUIDE"),
     "glue": block("<!-- ================= GLUE GUIDE", "<!-- ================= FAQ"),
-    "faq": block("<!-- ================= FAQ", "<!-- ================= ABOUT"),
+    "faq": block("<!-- ================= FAQ", "<!-- ================= SHOP"),
+    "shop": block("<!-- ================= SHOP", "<!-- ================= ABOUT"),
     "about": block("<!-- ================= ABOUT", "<div class=\"trim trim-yellow\""),
 }
 
@@ -163,6 +164,11 @@ PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, 
      "Short answers to beginner questions about dollhouse miniatures: cost, scale, where to buy, mixing scales, lighting without wiring and fixing wallpaper.",
      "Respuestas cortas a preguntas de principiantes: costo, escala, dónde comprar, mezclar escalas, luces sin cables y cómo arreglar el papel tapiz.",
      "Questions beginners ask, answered", "Respuestas a preguntas de principiantes"),
+    ("shop", "/shop/", "/es/tienda/", ["shop"], "Shop", "Tienda",
+     "Shop: Printable Dollhouse Room Planners · MiniatureNestStudio", "Tienda: planificadores imprimibles para casas de muñecas · MiniatureNestStudio",
+     "Printable PDF room planners for 1:6, 1:12 and 1:24 dollhouse rooms, plus a 1:24 kitchen planner. Undated, GoodNotes-friendly, instant download.",
+     "Planificadores de cuartos en PDF para casas de muñecas en 1:6, 1:12 y 1:24, más un planificador de cocina 1:24. Sin fechas, para GoodNotes, descarga inmediata.",
+     "Printable room planners for 1:6, 1:12 and 1:24", "Planificadores imprimibles para 1:6, 1:12 y 1:24"),
     ("about", "/about/", "/es/sobre-mi/", ["about"], "About", "Sobre mí",
      "About Janice · MiniatureNestStudio", "Sobre mí · MiniatureNestStudio",
      "Meet Janice, the Puerto Rican maker behind MiniatureNestStudio's dollhouse planners and guides.",
@@ -171,9 +177,9 @@ PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, 
 ]
 P = {p[0]: p for p in PAGES}
 SECTIONS = [p for p in PAGES if p[0] != "home"]
-NAV = [P[k] for k in ("start", "scale", "printables", "roombox", "puertorico", "about")]
+NAV = [P[k] for k in ("start", "scale", "printables", "roombox", "puertorico", "shop", "about")]
 TOOLS = [P[k] for k in ("which", "ruler", "glue", "faq")]
-ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "faq", "about")]
+ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "faq", "shop", "about")]
 L = {"en": 1, "es": 2}
 
 def strip_lang(html, lang):

@@ -101,6 +101,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/preguntas/"/>
   </url>
   <url>
+    <loc>https://miniatureneststudio.com/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/shop/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/tienda/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/tienda/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/shop/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/tienda/"/>
+  </url>
+  <url>
     <loc>https://miniatureneststudio.com/about/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/about/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/sobre-mi/"/>

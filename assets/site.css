@@ -476,6 +476,18 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 .faq-item[open] summary::after { content: "−"; }
 .faq-item p { padding-bottom: 1rem; color: var(--fg); }
 .faq-item a, .callout a { color: var(--mark); }
+.prod-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; margin-top: 2rem; }
+@media (max-width: 720px) { .prod-grid { grid-template-columns: minmax(0, 1fr); } }
+.prod { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+.prod img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.prod-body { padding: 1.1rem 1.2rem 1.3rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
+.prod-scale { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .08em; color: var(--mark); }
+.prod h3 { font-family: var(--f-display); font-weight: 400; font-size: 1.5rem; line-height: 1.15; }
+.prod-meta { font-size: var(--s-sm); color: var(--muted); }
+.prod-buy { margin-top: auto; padding-top: .4rem; display: flex; align-items: center; justify-content: space-between; gap: .8rem; flex-wrap: wrap; }
+.prod-price { font-family: var(--f-display); font-size: 1.6rem; color: var(--fg); }
+.prod .btn.solid { background: var(--mat); color: var(--on-mat); border-color: var(--mat); }
+.prod-note { margin-top: 1.4rem; }
 
 /* ---------- multi-page additions ---------- */
 .lang a { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .06em; text-decoration: none; color: var(--on-mat-muted); padding: .45rem .7rem; border-radius: 999px; }
