@@ -35,7 +35,8 @@ BLOCKS = {
     "which": block("<!-- ================= WHICH SCALE", "<!-- ================= SCALE RULER"),
     "ruler": block("<!-- ================= SCALE RULER", "<!-- ================= GLUE GUIDE"),
     "glue": block("<!-- ================= GLUE GUIDE", "<!-- ================= FAQ"),
-    "faq": block("<!-- ================= FAQ", "<!-- ================= SHOP"),
+    "faq": block("<!-- ================= FAQ", "<!-- ================= COLMADO BUILD"),
+    "colmado": block("<!-- ================= COLMADO BUILD", "<!-- ================= SHOP"),
     "shop": block("<!-- ================= SHOP", "<!-- ================= ABOUT"),
     "about": block("<!-- ================= ABOUT", "<div class=\"trim trim-yellow\""),
 }
@@ -164,6 +165,11 @@ PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, 
      "Short answers to beginner questions about dollhouse miniatures: cost, scale, where to buy, mixing scales, lighting without wiring and fixing wallpaper.",
      "Respuestas cortas a preguntas de principiantes: costo, escala, dónde comprar, mezclar escalas, luces sin cables y cómo arreglar el papel tapiz.",
      "Questions beginners ask, answered", "Respuestas a preguntas de principiantes"),
+    ("colmado", "/colmado-build/", "/es/diario-colmado/", ["colmado"], "Colmado build", "Diario del colmado",
+     "Colmado Doña Carmen: a 1:12 Puerto Rican Corner Store Build Diary", "Colmado Doña Carmen: diario de construcción de un colmado 1:12",
+     "Step-by-step photos of a 1:12 Puerto Rican colmado room box: printed paper groceries, shelf strips for tiny bottles, rolled cans and a Christmas storefront.",
+     "Fotos paso a paso de un colmado puertorriqueño en roombox 1:12: compra de papel impresa, tiras de botellas, latas enrolladas y una fachada navideña.",
+     "A 1:12 corner store, step by step", "Un colmado 1:12, paso a paso"),
     ("shop", "/shop/", "/es/tienda/", ["shop"], "Shop", "Tienda",
      "Shop: Printable Dollhouse Room Planners · MiniatureNestStudio", "Tienda: planificadores imprimibles para casas de muñecas · MiniatureNestStudio",
      "Printable PDF room planners for 1:6, 1:12 and 1:24 dollhouse rooms, plus a 1:24 kitchen planner. Undated, GoodNotes-friendly, instant download.",
@@ -179,7 +185,7 @@ P = {p[0]: p for p in PAGES}
 SECTIONS = [p for p in PAGES if p[0] != "home"]
 NAV = [P[k] for k in ("start", "scale", "printables", "roombox", "puertorico", "shop", "about")]
 TOOLS = [P[k] for k in ("which", "ruler", "glue", "faq")]
-ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "faq", "shop", "about")]
+ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "colmado", "faq", "shop", "about")]
 L = {"en": 1, "es": 2}
 
 def strip_lang(html, lang):

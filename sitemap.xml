@@ -101,6 +101,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/preguntas/"/>
   </url>
   <url>
+    <loc>https://miniatureneststudio.com/colmado-build/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/colmado-build/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/diario-colmado/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/diario-colmado/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/colmado-build/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/diario-colmado/"/>
+  </url>
+  <url>
     <loc>https://miniatureneststudio.com/shop/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/shop/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/tienda/"/>
