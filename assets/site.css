@@ -503,6 +503,15 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 @media (max-width: 560px) { .entry-pics .wide { grid-column: auto; } }
 .entry-pics .wide a { aspect-ratio: auto; }
 .entry-pics .wide img { height: auto; }
+.plan-box { margin-top: clamp(2.4rem, 6vw, 3.4rem); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 1.6rem; padding: clamp(1.2rem, 3vw, 1.8rem); border-radius: 14px; background: var(--tint); border: 1px solid var(--line); }
+.plan-box > div { flex: 1 1 320px; min-width: 0; }
+.plan-box h3 { font-family: var(--f-display); font-weight: 400; font-size: clamp(1.4rem, 3.2vw, 1.8rem); line-height: 1.15; margin-top: .3rem; }
+.plan-box p:not(.kicker) { margin-top: .4rem; }
+.plan-box .kicker { color: var(--mark); }
+.plan-box .btn.solid { background: var(--mat); color: var(--on-mat); border-color: var(--mat); }
+.tut-n { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--mat); color: var(--on-mat); font: 600 .7em/1 var(--f-mono); vertical-align: .2em; margin-right: .3rem; }
+.entry .plain-steps { margin-top: .6rem; max-width: 64ch; }
+.tut-tip { margin-top: .7rem; max-width: 64ch; padding: .7rem .9rem; border-left: 3px solid var(--mark); background: var(--surface); border-radius: 0 8px 8px 0; font-size: var(--s-sm); }
 
 /* ---------- multi-page additions ---------- */
 .lang a { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .06em; text-decoration: none; color: var(--on-mat-muted); padding: .45rem .7rem; border-radius: 999px; }

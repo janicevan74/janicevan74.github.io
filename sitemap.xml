@@ -101,6 +101,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/preguntas/"/>
   </url>
   <url>
+    <loc>https://miniatureneststudio.com/paper-groceries/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/paper-groceries/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/compra-de-papel/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/compra-de-papel/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/paper-groceries/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/compra-de-papel/"/>
+  </url>
+  <url>
     <loc>https://miniatureneststudio.com/colmado-build/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/colmado-build/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/diario-colmado/"/>

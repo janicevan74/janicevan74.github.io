@@ -35,7 +35,8 @@ BLOCKS = {
     "which": block("<!-- ================= WHICH SCALE", "<!-- ================= SCALE RULER"),
     "ruler": block("<!-- ================= SCALE RULER", "<!-- ================= GLUE GUIDE"),
     "glue": block("<!-- ================= GLUE GUIDE", "<!-- ================= FAQ"),
-    "faq": block("<!-- ================= FAQ", "<!-- ================= COLMADO BUILD"),
+    "faq": block("<!-- ================= FAQ", "<!-- ================= PAPER GROCERIES"),
+    "groceries": block("<!-- ================= PAPER GROCERIES", "<!-- ================= COLMADO BUILD"),
     "colmado": block("<!-- ================= COLMADO BUILD", "<!-- ================= SHOP"),
     "shop": block("<!-- ================= SHOP", "<!-- ================= ABOUT"),
     "about": block("<!-- ================= ABOUT", "<div class=\"trim trim-yellow\""),
@@ -165,6 +166,11 @@ PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, 
      "Short answers to beginner questions about dollhouse miniatures: cost, scale, where to buy, mixing scales, lighting without wiring and fixing wallpaper.",
      "Respuestas cortas a preguntas de principiantes: costo, escala, dónde comprar, mezclar escalas, luces sin cables y cómo arreglar el papel tapiz.",
      "Questions beginners ask, answered", "Respuestas a preguntas de principiantes"),
+    ("groceries", "/paper-groceries/", "/es/compra-de-papel/", ["groceries"], "Paper groceries", "Compra de papel",
+     "How to Make 1:12 Miniature Paper Groceries: Boxes, Cans, Bottles and Crates", "Cómo hacer compra de papel en miniatura 1:12: cajas, latas, botellas y cajas de frutas",
+     "Step-by-step photos for making dollhouse groceries from printables: folded boxes, cans rolled on a dowel, bottle shelf strips, produce crates, a paper bag and a wooden counter.",
+     "Fotos paso a paso para hacer compra de casa de muñecas con imprimibles: cajas dobladas, latas enrolladas en un palito, tiras de botellas, cajas de frutas, una bolsa de papel y un mostrador.",
+     "Boxes, cans, bottles and crates, step by step", "Cajas, latas, botellas y cajas de frutas, paso a paso"),
     ("colmado", "/colmado-build/", "/es/diario-colmado/", ["colmado"], "Colmado build", "Diario del colmado",
      "Colmado Doña Carmen: a 1:12 Puerto Rican Corner Store Build Diary", "Colmado Doña Carmen: diario de construcción de un colmado 1:12",
      "Step-by-step photos of a 1:12 Puerto Rican colmado room box: printed paper groceries, shelf strips for tiny bottles, rolled cans and a Christmas storefront.",
@@ -184,8 +190,8 @@ PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, 
 P = {p[0]: p for p in PAGES}
 SECTIONS = [p for p in PAGES if p[0] != "home"]
 NAV = [P[k] for k in ("start", "scale", "printables", "roombox", "puertorico", "shop", "about")]
-TOOLS = [P[k] for k in ("which", "ruler", "glue", "faq")]
-ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "colmado", "faq", "shop", "about")]
+TOOLS = [P[k] for k in ("which", "ruler", "glue", "groceries", "faq")]
+ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "colmado", "groceries", "faq", "shop", "about")]
 L = {"en": 1, "es": 2}
 
 def strip_lang(html, lang):

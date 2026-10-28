@@ -526,6 +526,15 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 @media (max-width: 560px) { .entry-pics .wide { grid-column: auto; } }
 .entry-pics .wide a { aspect-ratio: auto; }
 .entry-pics .wide img { height: auto; }
+.plan-box { margin-top: clamp(2.4rem, 6vw, 3.4rem); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 1.6rem; padding: clamp(1.2rem, 3vw, 1.8rem); border-radius: 14px; background: var(--tint); border: 1px solid var(--line); }
+.plan-box > div { flex: 1 1 320px; min-width: 0; }
+.plan-box h3 { font-family: var(--f-display); font-weight: 400; font-size: clamp(1.4rem, 3.2vw, 1.8rem); line-height: 1.15; margin-top: .3rem; }
+.plan-box p:not(.kicker) { margin-top: .4rem; }
+.plan-box .kicker { color: var(--mark); }
+.plan-box .btn.solid { background: var(--mat); color: var(--on-mat); border-color: var(--mat); }
+.tut-n { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--mat); color: var(--on-mat); font: 600 .7em/1 var(--f-mono); vertical-align: .2em; margin-right: .3rem; }
+.entry .plain-steps { margin-top: .6rem; max-width: 64ch; }
+.tut-tip { margin-top: .7rem; max-width: 64ch; padding: .7rem .9rem; border-left: 3px solid var(--mark); background: var(--surface); border-radius: 0 8px 8px 0; font-size: var(--s-sm); }
 </style>
 
 </head>
@@ -961,7 +970,7 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
       </div>
       <div class="callout hm-tip">
         <h3><span data-l="en">Tip: cans from a dowel</span><span data-l="es">Truco: latas con un palito de madera</span></h3>
-        <p class="prose"><span data-l="en">Wrap printed can labels around a wooden dowel, leaving a small gap between them, and glue each seam. Once dry, cut the dowel between the labels and you have a row of matching cans. A ¼ in dowel makes a can about 3 in across at 1:12.</span><span data-l="es">Enrolla las etiquetas de latas alrededor de un palito de madera, dejando un espacio pequeño entre ellas, y pega cada unión. Cuando sequen, corta el palito entre las etiquetas y tendrás una fila de latas iguales. Un palito de ¼ pulg da una lata de unas 3 pulg de ancho en 1:12.</span></p>
+        <p class="prose"><span data-l="en">Wrap printed can labels around a wooden dowel, leaving a small gap between them, and glue each seam. Once dry, cut the dowel between the labels and you have a row of matching cans. A ¼ in dowel makes a can about 3 in across at 1:12. See every step in the <a href="@@groceries">paper groceries tutorial</a>.</span><span data-l="es">Enrolla las etiquetas de latas alrededor de un palito de madera, dejando un espacio pequeño entre ellas, y pega cada unión. Cuando sequen, corta el palito entre las etiquetas y tendrás una fila de latas iguales. Un palito de ¼ pulg da una lata de unas 3 pulg de ancho en 1:12. Mira cada paso en el <a href="@@groceries">tutorial de compra de papel</a>.</span></p>
       </div>
     </div>
 
@@ -1537,6 +1546,124 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
   </div>
 </section>
 
+<!-- ================= PAPER GROCERIES ================= -->
+<section class="part" id="groceries">
+  <div class="room room-kitchen">
+    <div class="plaque">
+      <p class="kicker"><span data-l="en">Tutorial · 1:12</span><span data-l="es">Tutorial · 1:12</span></p>
+      <h2><span data-l="en">How to make paper groceries</span><span data-l="es">Cómo hacer compra de papel</span></h2>
+    </div>
+  </div>
+  <div class="base" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="part-head">
+      <p><span data-l="en">Every box, can, bottle and crate in my <a href="@@colmado">colmado</a> is printed paper. Here is how each kind is made, with photos from the build. The same steps work for a kitchen pantry, a bodega or a bakery.</span><span data-l="es">Cada caja, lata, botella y caja de frutas de mi <a href="@@colmado">colmado</a> es papel impreso. Aquí te explico cómo se hace cada una, con fotos de la construcción. Los mismos pasos sirven para una alacena, una bodega o una panadería.</span></p>
+    </div>
+    <div class="callout">
+      <h3><span data-l="en">You'll need</span><span data-l="es">Vas a necesitar</span></h3>
+      <ul class="ticks">
+        <li><span data-l="en">Cardstock (65–80 lb), regular printer paper and photo paper</span><span data-l="es">Cartulina (65–80 lb), papel de impresora normal y papel fotográfico</span></li>
+        <li><span data-l="en">A craft knife, a metal ruler and a self-healing cutting mat</span><span data-l="es">Una cuchilla, una regla de metal y una base de corte</span></li>
+        <li><span data-l="en">An empty ballpoint pen or a bone folder for scoring</span><span data-l="es">Un bolígrafo sin tinta o una plegadera para marcar</span></li>
+        <li><span data-l="en">Tacky glue, a glue stick, toothpicks and tweezers</span><span data-l="es">Cola blanca, pega en barra, palillos y pinzas</span></li>
+        <li><span data-l="en">A ¼ in wooden dowel (for cans) and a sheet of foam board</span><span data-l="es">Un palito de madera de ¼ pulg (para las latas) y una plancha de foam</span></li>
+      </ul>
+      <p style="margin-top:.6rem"><span data-l="en">New to printables? Read <a href="@@printables">print, cut and glue</a> first, and see <a href="@@glue">which glue to use</a>.</span><span data-l="es">¿Nunca has trabajado con imprimibles? Lee primero <a href="@@printables">imprimir, cortar y pegar</a>, y mira <a href="@@glue">qué pegamento usar</a>.</span></p>
+    </div>
+    <div class="diary">
+      <article class="entry">
+        <h3><span class="tut-n">1</span> <span data-l="en">Boxes and cartons</span><span data-l="es">Cajas y cartones</span></h3>
+        <ol class="plain-steps">
+          <li><span data-l="en">Print at 100% on cardstock (65–80 lb). Check the test square first.</span><span data-l="es">Imprime al 100% en cartulina (65–80 lb). Revisa primero el cuadrado de prueba.</span></li>
+          <li><span data-l="en">Cut on the outline with a craft knife and a metal ruler.</span><span data-l="es">Corta por el borde con una cuchilla y una regla de metal.</span></li>
+          <li><span data-l="en">Score every fold line with an empty ballpoint pen, then fold.</span><span data-l="es">Marca cada línea de doblez con un bolígrafo sin tinta y dobla.</span></li>
+          <li><span data-l="en">Glue the side tab first to make a tube, then close the bottom and the top. A toothpick spreads tacky glue thin.</span><span data-l="es">Pega primero la pestaña del lado para formar un tubo, luego cierra el fondo y la tapa. Un palillo esparce la cola blanca bien finita.</span></li>
+          <li><span data-l="en">Run a matching marker along the white cut edges.</span><span data-l="es">Pasa un marcador del mismo color por los bordes blancos.</span></li>
+        </ol>
+        <p class="tut-tip"><b><span data-l="en">Tip</span><span data-l="es">Consejo</span>:</b> <span data-l="en">Making a whole shelf? Cut all the pieces first, then score them all, then fold them all. Doing one step at a time is faster and the boxes come out matching.</span><span data-l="es">¿Vas a llenar una tablilla completa? Recorta todas las piezas primero, después márcalas todas y luego dóblalas todas. Un paso a la vez es más rápido y las cajas quedan iguales.</span></p>
+        <div class="entry-pics">
+          <figure><a href="/assets/img/colmado-nets-cut.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-nets-cut.jpg" width="1400" height="1050" alt="Cut-out box nets on a cutting mat" loading="lazy"></a><figcaption><span data-l="en">Cut and ready to fold</span><span data-l="es">Recortadas y listas para doblar</span></figcaption></figure>
+          <figure><a href="/assets/img/colmado-boxes-folded.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-boxes-folded.jpg" width="1400" height="1050" alt="Folded miniature boxes on a cutting mat" loading="lazy"></a><figcaption><span data-l="en">Folded and glued</span><span data-l="es">Dobladas y pegadas</span></figcaption></figure>
+          <figure><a href="/assets/img/colmado-brisa.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-brisa.jpg" width="1079" height="1400" alt="Folded Brisa detergent boxes" loading="lazy"></a><figcaption><span data-l="en">Finished</span><span data-l="es">Terminadas</span></figcaption></figure>
+        </div>
+      </article>
+      <article class="entry">
+        <h3><span class="tut-n">2</span> <span data-l="en">Cans</span><span data-l="es">Latas</span></h3>
+        <ol class="plain-steps">
+          <li><span data-l="en">Print the can labels on regular printer paper, which rolls without cracking.</span><span data-l="es">Imprime las etiquetas en papel de impresora normal, que se enrolla sin quebrarse.</span></li>
+          <li><span data-l="en">Wrap each label around a ¼ in wooden dowel, leaving a small gap between labels, and glue the seam.</span><span data-l="es">Enrolla cada etiqueta en un palito de madera de ¼ pulg, dejando un espacio entre etiquetas, y pega la unión.</span></li>
+          <li><span data-l="en">Once dry, cut the dowel in the gaps between labels.</span><span data-l="es">Cuando seque, corta el palito en los espacios entre etiquetas.</span></li>
+          <li><span data-l="en">Color the cut ends silver so they read as metal lids.</span><span data-l="es">Pinta de plateado las puntas cortadas para que parezcan tapas de metal.</span></li>
+        </ol>
+        <p class="tut-tip"><b><span data-l="en">Tip</span><span data-l="es">Consejo</span>:</b> <span data-l="en">Why ¼ in? A real can is about 3 in across. At 1:12 that's ¼ in. A label for a ¼ in dowel is about 0.79 in long (¼ × 3.14), plus about ¹⁄₁₆ in to overlap at the seam.</span><span data-l="es">¿Por qué ¼ pulg? Una lata de verdad mide unas 3 pulg de ancho. En 1:12 eso es ¼ pulg. La etiqueta para un palito de ¼ pulg mide unas 0.79 pulg de largo (¼ × 3.14), más ¹⁄₁₆ pulg para montar en la unión.</span></p>
+        <div class="entry-pics">
+          <figure><a href="/assets/img/colmado-cans.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-cans.jpg" width="983" height="1210" alt="Tiny rolled paper cans with red and green labels" loading="lazy"></a><figcaption><span data-l="en">A batch of cans</span><span data-l="es">Una tanda de latas</span></figcaption></figure>
+        </div>
+      </article>
+      <article class="entry">
+        <h3><span class="tut-n">3</span> <span data-l="en">Bottles and jars: the shelf-strip shortcut</span><span data-l="es">Botellas y frascos: el atajo de la tira</span></h3>
+        <ol class="plain-steps">
+          <li><span data-l="en">Print a whole row of bottles as one strip, on photo paper for a little shine.</span><span data-l="es">Imprime una fila completa de botellas en una sola tira, en papel fotográfico para que brille un poco.</span></li>
+          <li><span data-l="en">Glue the strip to light cardstock so it stays stiff, then cut along the straight edges.</span><span data-l="es">Pega la tira en cartulina fina para que quede firme y corta por los bordes rectos.</span></li>
+          <li><span data-l="en">Glue a small strip of foam board behind the bottom edge so it stands up on the shelf.</span><span data-l="es">Pega una tirita de foam detrás del borde de abajo para que se pare en la tablilla.</span></li>
+        </ol>
+        <p class="tut-tip"><b><span data-l="en">Tip</span><span data-l="es">Consejo</span>:</b> <span data-l="en">From the front a strip reads as a full row of bottles, and it saves folding dozens of tiny pieces. Save your patience for the pieces people see up close.</span><span data-l="es">De frente la tira parece una fila llena de botellas y te ahorra doblar docenas de piezas chiquitas. Guarda la paciencia para las piezas que se ven de cerca.</span></p>
+        <div class="entry-pics">
+          <figure class="wide"><a href="/assets/img/colmado-bottle-strip.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-bottle-strip.jpg" width="1400" height="631" alt="A printed strip of bottles on a cutting mat" loading="lazy"></a><figcaption><span data-l="en">One strip, a whole row</span><span data-l="es">Una tira, una fila completa</span></figcaption></figure>
+          <figure><a href="/assets/img/colmado-shelves-first.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-shelves-first.jpg" width="1400" height="1363" alt="The bottle strips standing on the colmado shelves" loading="lazy"></a><figcaption><span data-l="en">On the shelf</span><span data-l="es">En la tablilla</span></figcaption></figure>
+        </div>
+      </article>
+      <article class="entry">
+        <h3><span class="tut-n">4</span> <span data-l="en">Produce crates</span><span data-l="es">Cajas de frutas</span></h3>
+        <ol class="plain-steps">
+          <li><span data-l="en">Print the crate on cardstock and cut it out in one piece.</span><span data-l="es">Imprime la caja en cartulina y recórtala en una sola pieza.</span></li>
+          <li><span data-l="en">Score and fold up the four sides, then glue the corner tabs.</span><span data-l="es">Marca y dobla los cuatro lados y pega las pestañas de las esquinas.</span></li>
+          <li><span data-l="en">Glue a white insert inside, a little below the rim, so the fruit sits on top.</span><span data-l="es">Pega un fondo blanco por dentro, un poco más abajo del borde, para que la fruta quede encima.</span></li>
+          <li><span data-l="en">Glue the printed fruit on the insert.</span><span data-l="es">Pega la fruta impresa sobre ese fondo.</span></li>
+        </ol>
+        <div class="entry-pics">
+          <figure><a href="/assets/img/colmado-crates-cut.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-crates-cut.jpg" width="1400" height="1050" alt="Crate nets cut out on a cutting mat" loading="lazy"></a><figcaption><span data-l="en">Cut out</span><span data-l="es">Recortadas</span></figcaption></figure>
+          <figure><a href="/assets/img/colmado-crates-folded.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-crates-folded.jpg" width="1050" height="1400" alt="A folded crate" loading="lazy"></a><figcaption><span data-l="en">Folded</span><span data-l="es">Doblada</span></figcaption></figure>
+          <figure><a href="/assets/img/colmado-crates-filled.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-crates-filled.jpg" width="1050" height="1400" alt="A crate with its white insert" loading="lazy"></a><figcaption><span data-l="en">Insert in</span><span data-l="es">Con el fondo</span></figcaption></figure>
+          <figure><a href="/assets/img/colmado-crate-guineos.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-crate-guineos.jpg" width="1050" height="1400" alt="A finished crate of guineos" loading="lazy"></a><figcaption><span data-l="en">Guineos, done</span><span data-l="es">Guineos, lista</span></figcaption></figure>
+        </div>
+      </article>
+      <article class="entry">
+        <h3><span class="tut-n">5</span> <span data-l="en">A paper grocery bag</span><span data-l="es">Una bolsa de papel</span></h3>
+        <ol class="plain-steps">
+          <li><span data-l="en">Cut the bag on its outline, including the zigzag top.</span><span data-l="es">Recorta la bolsa por el borde, con todo y el zigzag de arriba.</span></li>
+          <li><span data-l="en">Crease every fold, then glue the narrow flap to make a tube.</span><span data-l="es">Marca todos los dobleces y pega la pestaña estrecha para formar un tubo.</span></li>
+          <li><span data-l="en">Fold the sides in to make the gussets, so the bag folds flat.</span><span data-l="es">Dobla los lados hacia adentro para hacer los fuelles, así la bolsa queda plana.</span></li>
+          <li><span data-l="en">Fold up the bottom, then open the bag and press the bottom square.</span><span data-l="es">Dobla el fondo hacia arriba, abre la bolsa y aprieta el fondo para que quede cuadrado.</span></li>
+        </ol>
+        <div class="entry-pics">
+          <figure><a href="/assets/img/colmado-bag.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-bag.jpg" width="1400" height="1307" alt="A tiny brown paper bag with the store stamp" loading="lazy"></a><figcaption><span data-l="en">Fingertip size</span><span data-l="es">Del tamaño de la punta del dedo</span></figcaption></figure>
+        </div>
+      </article>
+      <article class="entry">
+        <h3><span class="tut-n">6</span> <span data-l="en">A wooden counter</span><span data-l="es">Un mostrador de madera</span></h3>
+        <ol class="plain-steps">
+          <li><span data-l="en">Cut a block of foam board the size of the countertop.</span><span data-l="es">Corta un bloque de foam del tamaño del tope.</span></li>
+          <li><span data-l="en">Wrap it in printed wood-grain paper like a gift, gluing the paper on the underside.</span><span data-l="es">Envuélvelo en papel con vetas de madera como un regalo, pegando el papel por debajo.</span></li>
+          <li><span data-l="en">Glue it on top of the counter front and cover the exposed end so no foam shows.</span><span data-l="es">Pégalo encima del frente del mostrador y cubre la punta para que no se vea el foam.</span></li>
+        </ol>
+        <div class="entry-pics">
+          <figure><a href="/assets/img/colmado-top-wrapped.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-top-wrapped.jpg" width="1050" height="1400" alt="Countertop wrapped in wood-grain paper" loading="lazy"></a><figcaption><span data-l="en">Wrapped</span><span data-l="es">Envuelto</span></figcaption></figure>
+          <figure><a href="/assets/img/colmado-top-end.jpg" target="_blank" rel="noopener"><img src="/assets/img/colmado-top-end.jpg" width="1050" height="1400" alt="Counter end with its cover" loading="lazy"></a><figcaption><span data-l="en">End covered</span><span data-l="es">Punta cubierta</span></figcaption></figure>
+        </div>
+      </article>
+    </div>
+    <aside class="plan-box">
+      <div>
+        <p class="kicker"><span data-l="en">Plan your own room</span><span data-l="es">Planifica tu propio cuarto</span></p>
+        <h3><span data-l="en">Building a store, a kitchen or a whole house?</span><span data-l="es">¿Vas a hacer una tienda, una cocina o una casa completa?</span></h3>
+        <p><span data-l="en">My printable room planners walk you through measurements, a floor plan, a shopping list and a build tracker, for 1:6, 1:12 and 1:24.</span><span data-l="es">Mis planificadores imprimibles te guían con las medidas, el plano, la lista de compras y el control de construcción, para 1:6, 1:12 y 1:24.</span></p>
+      </div>
+      <a class="btn solid" href="@@shop"><span data-l="en">See the planners</span><span data-l="es">Ver los planificadores</span> →</a>
+    </aside>
+  </div>
+</section>
+
 <!-- ================= COLMADO BUILD ================= -->
 <section class="part" id="colmado">
   <div class="room room-pr">
@@ -1548,7 +1675,7 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
   <div class="base" aria-hidden="true"></div>
   <div class="wrap">
     <div class="part-head">
-      <p><span data-l="en">A 1:12 Puerto Rican corner store, built as a gift for my mom, Carmen. Every box, can and bottle on these shelves is printed paper. Newest steps are at the top; tap any photo to see it bigger.</span><span data-l="es">Un colmado puertorriqueño a escala 1:12, hecho como regalo para mi mamá, Carmen. Cada caja, lata y botella en estas tablillas es papel impreso. Los pasos más nuevos están arriba; toca cualquier foto para verla más grande.</span></p>
+      <p><span data-l="en">A 1:12 Puerto Rican corner store, built as a gift for my mom, Carmen. Every box, can and bottle on these shelves is printed paper. Newest steps are at the top; tap any photo to see it bigger. Want to make your own? See <a href="@@groceries">how to make paper groceries</a>.</span><span data-l="es">Un colmado puertorriqueño a escala 1:12, hecho como regalo para mi mamá, Carmen. Cada caja, lata y botella en estas tablillas es papel impreso. Los pasos más nuevos están arriba; toca cualquier foto para verla más grande. ¿Quieres hacer los tuyos? Mira <a href="@@groceries">cómo hacer compra de papel</a>.</span></p>
     </div>
     <div class="diary">
       <article class="entry">
@@ -1648,6 +1775,14 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
       </article>
     </div>
     <p class="dl-note prod-note"><span data-l="en">Want to know what goes in a colmado? See <a href="@@puertorico">the Puerto Rican house</a>. New to folding paper boxes? Start with <a href="@@printables">printing, cutting and gluing</a>.</span><span data-l="es">¿Quieres saber qué lleva un colmado? Mira <a href="@@puertorico">la casa puertorriqueña</a>. ¿Nunca has doblado cajitas de papel? Empieza con <a href="@@printables">imprimir, cortar y pegar</a>.</span></p>
+    <aside class="plan-box">
+      <div>
+        <p class="kicker"><span data-l="en">Plan your own room</span><span data-l="es">Planifica tu propio cuarto</span></p>
+        <h3><span data-l="en">Building a store, a kitchen or a whole house?</span><span data-l="es">¿Vas a hacer una tienda, una cocina o una casa completa?</span></h3>
+        <p><span data-l="en">My printable room planners walk you through measurements, a floor plan, a shopping list and a build tracker, for 1:6, 1:12 and 1:24.</span><span data-l="es">Mis planificadores imprimibles te guían con las medidas, el plano, la lista de compras y el control de construcción, para 1:6, 1:12 y 1:24.</span></p>
+      </div>
+      <a class="btn solid" href="@@shop"><span data-l="en">See the planners</span><span data-l="es">Ver los planificadores</span> →</a>
+    </aside>
   </div>
 </section>
 
