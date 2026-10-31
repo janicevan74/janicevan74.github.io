@@ -512,6 +512,7 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 .tut-n { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--mat); color: var(--on-mat); font: 600 .7em/1 var(--f-mono); vertical-align: .2em; margin-right: .3rem; }
 .entry .plain-steps { margin-top: .6rem; max-width: 64ch; }
 .tut-tip { margin-top: .7rem; max-width: 64ch; padding: .7rem .9rem; border-left: 3px solid var(--mark); background: var(--surface); border-radius: 0 8px 8px 0; font-size: var(--s-sm); }
+.entry-date { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mark); margin-bottom: .4rem; }
 
 /* ---------- multi-page additions ---------- */
 .lang a { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .06em; text-decoration: none; color: var(--on-mat-muted); padding: .45rem .7rem; border-radius: 999px; }
