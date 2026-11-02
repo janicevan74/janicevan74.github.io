@@ -536,6 +536,9 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 .entry .plain-steps { margin-top: .6rem; max-width: 64ch; }
 .tut-tip { margin-top: .7rem; max-width: 64ch; padding: .7rem .9rem; border-left: 3px solid var(--mark); background: var(--surface); border-radius: 0 8px 8px 0; font-size: var(--s-sm); }
 .entry-date { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mark); margin-bottom: .4rem; }
+.next-up .wip-grid figure { aspect-ratio: 3 / 2; }
+.next-up .wip-grid figure:nth-child(2) img { object-position: center; }
+.ai-tag { position: absolute; left: 12px; top: 12px; font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; background: rgba(255,255,255,.92); color: #7a2840; padding: .45rem .7rem; border-radius: 999px; }
 </style>
 
 </head>
@@ -764,6 +767,25 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
         </figure>
       </div>
       <p class="wip-more"><a class="btn solid" href="@@colmado"><span data-l="en">See the whole build</span><span data-l="es">Mira toda la construcción</span> →</a></p>
+    </div>
+    <div class="wip next-up">
+      <div class="g-head">
+        <p class="eyebrow"><span data-l="en">Up next</span><span data-l="es">Lo próximo</span></p>
+        <h3><span data-l="en">Two room boxes for my daughters</span><span data-l="es">Dos roombox para mis hijas</span></h3>
+        <p><span data-l="en">A vet clinic and a pet shop in 1:12, named after our family dogs, Louis and Pluto. I used AI to sketch the plan; these are concept images, not finished builds. Now I build them for real, and the build diary will follow.</span><span data-l="es">Una clínica veterinaria y una tienda de mascotas en 1:12, con los nombres de los perritos de la familia, Louis y Pluto. Usé IA para dibujar el plan; estas son imágenes de concepto, no construcciones terminadas. Ahora las construyo de verdad, y el diario de construcción vendrá después.</span></p>
+      </div>
+      <div class="wip-grid">
+        <figure>
+          <img src="/assets/img/concept-louis-vet.jpg" width="1400" height="933" alt="AI concept image of Louis' Veterinary Clinic room box with a reception area and an exam room" loading="lazy">
+          <span class="ai-tag"><span data-l="en">AI concept</span><span data-l="es">Concepto con IA</span></span>
+          <figcaption><span data-l="en">Louis' Veterinary Clinic</span><span data-l="es">Clínica Veterinaria de Louis</span></figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/img/concept-pluto-petshop.jpg" width="1400" height="933" alt="AI concept image of Pluto's Pet Shop and Clinic room box with a pet store and a small exam room" loading="lazy">
+          <span class="ai-tag"><span data-l="en">AI concept</span><span data-l="es">Concepto con IA</span></span>
+          <figcaption><span data-l="en">Pluto's Pet Shop &amp; Clinic</span><span data-l="es">Tienda de Mascotas y Clínica de Pluto</span></figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>

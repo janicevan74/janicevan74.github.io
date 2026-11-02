@@ -513,6 +513,9 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 .entry .plain-steps { margin-top: .6rem; max-width: 64ch; }
 .tut-tip { margin-top: .7rem; max-width: 64ch; padding: .7rem .9rem; border-left: 3px solid var(--mark); background: var(--surface); border-radius: 0 8px 8px 0; font-size: var(--s-sm); }
 .entry-date { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mark); margin-bottom: .4rem; }
+.next-up .wip-grid figure { aspect-ratio: 3 / 2; }
+.next-up .wip-grid figure:nth-child(2) img { object-position: center; }
+.ai-tag { position: absolute; left: 12px; top: 12px; font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; background: rgba(255,255,255,.92); color: #7a2840; padding: .45rem .7rem; border-radius: 999px; }
 
 /* ---------- multi-page additions ---------- */
 .lang a { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .06em; text-decoration: none; color: var(--on-mat-muted); padding: .45rem .7rem; border-radius: 999px; }
