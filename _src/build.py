@@ -37,7 +37,8 @@ BLOCKS = {
     "glue": block("<!-- ================= GLUE GUIDE", "<!-- ================= FAQ"),
     "faq": block("<!-- ================= FAQ", "<!-- ================= PAPER GROCERIES"),
     "groceries": block("<!-- ================= PAPER GROCERIES", "<!-- ================= BUILDS"),
-    "builds": block("<!-- ================= BUILDS", "<!-- ================= COLMADO BUILD"),
+    "builds": block("<!-- ================= BUILDS", "<!-- ================= BOOK NOOKS"),
+    "booknooks": block("<!-- ================= BOOK NOOKS", "<!-- ================= COLMADO BUILD"),
     "colmado": block("<!-- ================= COLMADO BUILD", "<!-- ================= NAVIDAD"),
     "navidad": block("<!-- ================= NAVIDAD", "<!-- ================= SHOP"),
     "shop": block("<!-- ================= SHOP", "<!-- ================= ABOUT"),
@@ -87,7 +88,7 @@ footer .wrap.foot-nav { display: block; padding-top: 0; padding-bottom: 2rem; }
 .foot-nav a { color: var(--on-mat-muted); text-decoration: none; white-space: nowrap; }
 .foot-nav a:hover { color: var(--on-mat); text-decoration: underline; }
 .ex-h2 { margin-top: 2.6rem; }
-.ex-grid4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.ex-grid4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 900px) { .ex-grid4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .ex-grid4 { grid-template-columns: minmax(0, 1fr); } }
 .ex-tool { border-top-color: var(--brass); background: var(--tint); }
@@ -178,6 +179,11 @@ PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, 
      "Photos of Janice's finished miniatures: the Colmado Doña Carmen room box, a 1:24 casita, book nook kits and a lit-up Titanic model.",
      "Fotos de las miniaturas terminadas de Janice: el roombox Colmado Doña Carmen, una casita 1:24, kits de book nooks y un modelo iluminado del Titanic.",
      "Room boxes, book nooks and models I've built", "Roombox, book nooks y modelos que he armado"),
+    ("booknooks", "/book-nook-tips/", "/es/consejos-book-nooks/", ["booknooks"], "Book nook tips", "Consejos de book nooks",
+     "Book Nook Tips for Beginners: 5 Things I Wish I'd Known", "Consejos de book nooks para principiantes: 5 cosas que ojalá hubiera sabido",
+     "Five tips from building book nook kits: when to glue even if the instructions don't say to, a quilling tool for scrolls, staying organized, thin wood, and sanding instead of forcing.",
+     "Cinco consejos de armar kits de book nooks: cuándo pegar aunque las instrucciones no lo digan, quilling para los rollitos, organizarte, la madera fina y lijar en vez de forzar.",
+     "5 things I wish I'd known before my first kit", "5 cosas que ojalá hubiera sabido antes de mi primer kit"),
     ("colmado", "/colmado-build/", "/es/diario-colmado/", ["colmado"], "Colmado build", "Diario del colmado",
      "Colmado Doña Carmen: a 1:12 Puerto Rican Corner Store Build Diary", "Colmado Doña Carmen: diario de construcción de un colmado 1:12",
      "Step-by-step photos of a 1:12 Puerto Rican colmado room box: printed paper groceries, shelf strips for tiny bottles, rolled cans and a Christmas storefront.",
@@ -202,8 +208,8 @@ PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, 
 P = {p[0]: p for p in PAGES}
 SECTIONS = [p for p in PAGES if p[0] != "home"]
 NAV = [P[k] for k in ("start", "scale", "printables", "roombox", "puertorico", "shop", "about")]
-TOOLS = [P[k] for k in ("which", "ruler", "glue", "groceries", "faq")]
-ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "builds", "colmado", "groceries", "navidad", "faq", "shop", "about")]
+TOOLS = [P[k] for k in ("which", "ruler", "glue", "groceries", "booknooks", "faq")]
+ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "builds", "booknooks", "colmado", "groceries", "navidad", "faq", "shop", "about")]
 L = {"en": 1, "es": 2}
 
 def strip_lang(html, lang):
