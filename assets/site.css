@@ -516,6 +516,15 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 .next-up .wip-grid figure { aspect-ratio: 3 / 2; }
 .next-up .wip-grid figure:nth-child(2) img { object-position: center; }
 .ai-tag { position: absolute; left: 12px; top: 12px; font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; background: rgba(255,255,255,.92); color: #7a2840; padding: .45rem .7rem; border-radius: 999px; }
+.season { padding-top: clamp(2rem, 5vw, 3rem); }
+.season-card { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 1.4rem; align-items: center; text-decoration: none; color: var(--fg); background: var(--tint); border: 1px solid var(--line); border-radius: 16px; padding: 1rem; }
+.season-card img { width: 160px; height: 160px; object-fit: cover; object-position: center 15%; border-radius: 12px; display: block; }
+.season-card .kicker { color: var(--mark); }
+.season-card h2 { font-family: var(--f-display); font-weight: 400; font-size: clamp(1.5rem, 3.6vw, 2.1rem); line-height: 1.1; margin: .3rem 0 .4rem; }
+.season-card p:not(.kicker) { margin: 0 0 .8rem; color: var(--muted); }
+.season-card .btn.solid { background: var(--mat); color: var(--on-mat); border-color: var(--mat); }
+.season-card:hover { border-color: var(--mark); }
+@media (max-width: 560px) { .season-card { grid-template-columns: 1fr; } .season-card img { width: 100%; height: 180px; } }
 
 /* ---------- multi-page additions ---------- */
 .lang a { font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .06em; text-decoration: none; color: var(--on-mat-muted); padding: .45rem .7rem; border-radius: 999px; }

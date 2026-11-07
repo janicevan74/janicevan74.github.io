@@ -118,7 +118,7 @@ JS_V = hashlib.sha1(js.encode()).hexdigest()[:8]
 
 # ---------- pages ----------
 PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, desc en, desc es, card en, card es
-    ("home", "/", "/es/", ["hero", "trim", "explore", "gallery"], "", "",
+    ("home", "/", "/es/", ["hero", "trim", "season", "explore", "gallery"], "", "",
      "MiniatureNestStudio · Dollhouse miniature tips & guides", "MiniatureNestStudio · Consejos y guías para miniaturas",
      "Free tips and tools for 1:6, 1:12 and 1:24 dollhouse rooms, in English and Spanish: scale converter, wallpaper planner, printables how-to and a Puerto Rican house guide.",
      "Consejos y herramientas gratis para cuartos de casas de muñecas en 1:6, 1:12 y 1:24, en español e inglés: convertidor de escala, planificador de papel tapiz, imprimibles y guía de la casa puertorriqueña.",
@@ -212,6 +212,17 @@ def strip_lang(html, lang):
     html = re.sub(r'<span data-l="%s">(.*?)</span>' % lang, r"\1", html, flags=re.S)
     assert "data-l=" not in html
     return html
+
+def season(lang):
+    # seasonal banner on the home page; remove "season" from the home blocks after the holidays
+    href = P["navidad"][L[lang]]
+    if lang == "en":
+        k, h, t, go = "Seasonal guide", "A Puerto Rican Christmas in miniature", "Parrandas, pasteles, coquito and the Reyes, with sizes in 1:6, 1:12 and 1:24 and how to make each piece in paper.", "Read the guide"
+    else:
+        k, h, t, go = "Guía de temporada", "Navidad boricua en miniatura", "Parrandas, pasteles, coquito y los Reyes, con medidas en 1:6, 1:12 y 1:24 y cómo hacer cada pieza en papel.", "Lee la guía"
+    return (f'<section class="season"><div class="wrap"><a class="season-card" href="{href}">'
+            f'<img src="/assets/img/colmado-xmas-door.jpg" width="1000" height="1350" alt="">'
+            f'<div><p class="kicker">{k}</p><h2>{h}</h2><p>{t}</p><span class="btn solid">{go} →</span></div></a></div></section>\n')
 
 def explore(lang):
     i = 10 if lang == "en" else 11
@@ -331,6 +342,7 @@ for p in PAGES:
         for b in p[3]:
             if b == "trim": parts.append('<div class="trim trim-pink" aria-hidden="true"></div>\n')
             elif b == "explore": parts.append(explore(lang))
+            elif b == "season": parts.append(season(lang))
             else:
                 h = BLOCKS[b]
                 if key != "home": h = promote_h1(h)

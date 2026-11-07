@@ -539,6 +539,15 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
 .next-up .wip-grid figure { aspect-ratio: 3 / 2; }
 .next-up .wip-grid figure:nth-child(2) img { object-position: center; }
 .ai-tag { position: absolute; left: 12px; top: 12px; font: 600 var(--s-xs)/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; background: rgba(255,255,255,.92); color: #7a2840; padding: .45rem .7rem; border-radius: 999px; }
+.season { padding-top: clamp(2rem, 5vw, 3rem); }
+.season-card { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 1.4rem; align-items: center; text-decoration: none; color: var(--fg); background: var(--tint); border: 1px solid var(--line); border-radius: 16px; padding: 1rem; }
+.season-card img { width: 160px; height: 160px; object-fit: cover; object-position: center 15%; border-radius: 12px; display: block; }
+.season-card .kicker { color: var(--mark); }
+.season-card h2 { font-family: var(--f-display); font-weight: 400; font-size: clamp(1.5rem, 3.6vw, 2.1rem); line-height: 1.1; margin: .3rem 0 .4rem; }
+.season-card p:not(.kicker) { margin: 0 0 .8rem; color: var(--muted); }
+.season-card .btn.solid { background: var(--mat); color: var(--on-mat); border-color: var(--mat); }
+.season-card:hover { border-color: var(--mark); }
+@media (max-width: 560px) { .season-card { grid-template-columns: 1fr; } .season-card img { width: 100%; height: 180px; } }
 </style>
 
 </head>
@@ -1290,6 +1299,7 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
       </div>
     </div>
 
+    <p class="dl-note prod-note"><span data-l="en">Building for the holidays? See <a href="@@navidad">a Puerto Rican Christmas in miniature</a>: parrandas, pasteles and the Reyes in 1:12.</span><span data-l="es">¿Vas a decorar para las fiestas? Mira <a href="@@navidad">Navidad boricua en miniatura</a>: parrandas, pasteles y los Reyes en 1:12.</span></p>
     <h3 class="pr-sub"><span data-l="en">How to make the details</span><span data-l="es">Cómo hacer los detalles</span></h3>
     <div class="pr-how">
       <div class="how">
@@ -1773,6 +1783,7 @@ section.part > .wrap { padding-top: clamp(2rem, 5vw, 3rem); }
       </div>
       <a class="btn solid" href="https://www.etsy.com/listing/4608732834" target="_blank" rel="noopener"><span data-l="en">Get the printables</span><span data-l="es">Consigue los imprimibles</span> →</a>
     </aside>
+    <p class="dl-note prod-note"><span data-l="en">Decorating your own for the holidays? See <a href="@@navidad">a Puerto Rican Christmas in miniature</a>.</span><span data-l="es">¿Vas a decorar el tuyo para las fiestas? Mira <a href="@@navidad">Navidad boricua en miniatura</a>.</span></p>
     <div class="diary">
       <article class="entry">
         <p class="entry-date"><span data-l="en">October 31, 2026</span><span data-l="es">31 de octubre de 2026</span></p>
