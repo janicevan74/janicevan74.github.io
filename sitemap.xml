@@ -111,6 +111,16 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/compra-de-papel/"/>
   </url>
   <url>
+    <loc>https://miniatureneststudio.com/my-builds/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/my-builds/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/mis-proyectos/"/>
+  </url>
+  <url>
+    <loc>https://miniatureneststudio.com/es/mis-proyectos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/my-builds/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/mis-proyectos/"/>
+  </url>
+  <url>
     <loc>https://miniatureneststudio.com/colmado-build/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://miniatureneststudio.com/colmado-build/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://miniatureneststudio.com/es/diario-colmado/"/>

@@ -36,7 +36,8 @@ BLOCKS = {
     "ruler": block("<!-- ================= SCALE RULER", "<!-- ================= GLUE GUIDE"),
     "glue": block("<!-- ================= GLUE GUIDE", "<!-- ================= FAQ"),
     "faq": block("<!-- ================= FAQ", "<!-- ================= PAPER GROCERIES"),
-    "groceries": block("<!-- ================= PAPER GROCERIES", "<!-- ================= COLMADO BUILD"),
+    "groceries": block("<!-- ================= PAPER GROCERIES", "<!-- ================= BUILDS"),
+    "builds": block("<!-- ================= BUILDS", "<!-- ================= COLMADO BUILD"),
     "colmado": block("<!-- ================= COLMADO BUILD", "<!-- ================= NAVIDAD"),
     "navidad": block("<!-- ================= NAVIDAD", "<!-- ================= SHOP"),
     "shop": block("<!-- ================= SHOP", "<!-- ================= ABOUT"),
@@ -172,6 +173,11 @@ PAGES = [  # key, en path, es path, blocks, nav en, nav es, title en, title es, 
      "Step-by-step photos for making dollhouse groceries from printables: folded boxes, cans rolled on a dowel, bottle shelf strips, produce crates, a paper bag and a wooden counter.",
      "Fotos paso a paso para hacer compra de casa de muñecas con imprimibles: cajas dobladas, latas enrolladas en un palito, tiras de botellas, cajas de frutas, una bolsa de papel y un mostrador.",
      "Boxes, cans, bottles and crates, step by step", "Cajas, latas, botellas y cajas de frutas, paso a paso"),
+    ("builds", "/my-builds/", "/es/mis-proyectos/", ["builds"], "My builds", "Mis proyectos",
+     "My Builds: Room Boxes, Book Nooks and Models · MiniatureNestStudio", "Mis proyectos: roombox, book nooks y modelos · MiniatureNestStudio",
+     "Photos of Janice's finished miniatures: the Colmado Doña Carmen room box, a 1:24 casita, book nook kits and a lit-up Titanic model.",
+     "Fotos de las miniaturas terminadas de Janice: el roombox Colmado Doña Carmen, una casita 1:24, kits de book nooks y un modelo iluminado del Titanic.",
+     "Room boxes, book nooks and models I've built", "Roombox, book nooks y modelos que he armado"),
     ("colmado", "/colmado-build/", "/es/diario-colmado/", ["colmado"], "Colmado build", "Diario del colmado",
      "Colmado Doña Carmen: a 1:12 Puerto Rican Corner Store Build Diary", "Colmado Doña Carmen: diario de construcción de un colmado 1:12",
      "Step-by-step photos of a 1:12 Puerto Rican colmado room box: printed paper groceries, shelf strips for tiny bottles, rolled cans and a Christmas storefront.",
@@ -197,7 +203,7 @@ P = {p[0]: p for p in PAGES}
 SECTIONS = [p for p in PAGES if p[0] != "home"]
 NAV = [P[k] for k in ("start", "scale", "printables", "roombox", "puertorico", "shop", "about")]
 TOOLS = [P[k] for k in ("which", "ruler", "glue", "groceries", "faq")]
-ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "colmado", "groceries", "navidad", "faq", "shop", "about")]
+ORDER = [P[k] for k in ("start", "which", "scale", "ruler", "printables", "glue", "roombox", "puertorico", "builds", "colmado", "groceries", "navidad", "faq", "shop", "about")]
 L = {"en": 1, "es": 2}
 
 def strip_lang(html, lang):
